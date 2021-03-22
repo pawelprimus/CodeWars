@@ -54,4 +54,14 @@ public String toJadenCase(String phrase) {
         .collect(Collectors.joining(" "));
   }
 
+    public String toJadenCase(String phrase) {
+
+    if(phrase == ""){
+      return null;
+    }
+    else{
+      return WordUtils.capitalize(phrase);
+    }
+  }
+
 */

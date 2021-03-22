@@ -14,7 +14,7 @@ class Exercise__31 {
         }
         return Integer.valueOf(resultSB.toString());
     }
-    
+
     public static void main(String[] args) {
         squareDigits(9119);
 
