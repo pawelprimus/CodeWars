@@ -9,19 +9,19 @@ public class Tests {
     @Test
     public void Exercise21() {
         assertEquals(")()())()(()()(",
-                Exercise_21.encode("Prespecialized"));
-        assertEquals("))))())))",Exercise_21.encode("   ()(   "));
+                Exercise_021.encode("Prespecialized"));
+        assertEquals("))))())))", Exercise_021.encode("   ()(   "));
     }
 
     @Test
     public void Exercise22(){
-        assertEquals('d', Exercise_22.MorseCodeChar("-.."));
-        assertEquals('q', Exercise_22.MorseCodeChar("--.-"));
-        assertEquals("HEY JUDE", Exercise_22.decode(".... . -.--   .--- ..- -.. ."));
+        assertEquals('d', Exercise_022.MorseCodeChar("-.."));
+        assertEquals('q', Exercise_022.MorseCodeChar("--.-"));
+        assertEquals("HEY JUDE", Exercise_022.decode(".... . -.--   .--- ..- -.. ."));
     }
 
     @Test void Exercise23(){
-        assertEquals("t", Exercise_23.getMiddle("testing"));
+        assertEquals("t", Exercise_023.getMiddle("testing"));
     }
 
 
