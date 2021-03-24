@@ -30,6 +30,6 @@ class Exercise_038 {
        return IntStream.range(Math.min(a, b), Math.max(a, b) + 1).sum();
      }
 
-     
+
 
      */
