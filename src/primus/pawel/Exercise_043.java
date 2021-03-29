@@ -52,3 +52,5 @@ class Exercise_043 {
     }
 
 }
+
+//List<Integer> list = Arrays.stream(ints).boxed().collect(Collectors.toList());
