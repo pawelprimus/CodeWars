@@ -24,5 +24,12 @@ public class Tests {
         assertEquals("t", Exercise_023.getMiddle("testing"));
     }
 
+    @Test void Exercise055(){
+        assertEquals("9", Exercise_055.getWeight("9"));
+        assertEquals("0", Exercise_055.getWeight("0"));
+        assertEquals("16", Exercise_055.getWeight("4444"));
+
+    }
+
 
 }
