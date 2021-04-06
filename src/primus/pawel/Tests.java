@@ -31,5 +31,13 @@ public class Tests {
 
     }
 
+    @Test void Exercise058(){
+        assertEquals(true, Exercise_058.arrayMadness(new int[]{4, 5, 6}, new int[]{1, 2, 3}));
+        assertEquals(false, Exercise_058.arrayMadness(new int[]{5,6,7}, new int[]{4,5,6}));
+        assertEquals(false, Exercise_058.arrayMadness(new int[]{4,5,6}, new int[]{3,4,5}));
+
+    }
+
+
 
 }
