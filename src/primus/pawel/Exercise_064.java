@@ -8,7 +8,7 @@ import java.util.Arrays;
 // 2021-04-10 T:04:25:50
 class Exercise_064 {
 
-    public static int[] countPositivesSumNegatives(int[] input)
+    public static int[]countPositivesSumNegatives(int[] input)
     {
         if(input.length == 0 || input == null ) return new int[] {};
          int positivesCount = (int) Arrays.stream(input)
