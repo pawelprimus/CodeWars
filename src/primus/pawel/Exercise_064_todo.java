@@ -6,7 +6,7 @@ import java.util.Arrays;
 // 8kyu
 // https://www.codewars.com/kata/576bb71bbbcf0951d5000044/train/java
 // 2021-04-10 T:04:25:50
-class Exercise_064 {
+class Exercise_064_todo {
 
     public static int[]countPositivesSumNegatives(int[] input)
     {
