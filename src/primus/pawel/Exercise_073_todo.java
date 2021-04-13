@@ -11,6 +11,9 @@ class Exercise_073_todo {
         for (int i = 0; i < n; i++) {
 
         }
+
+        return "";
     }
+
 
 }
