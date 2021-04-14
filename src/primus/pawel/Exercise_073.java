@@ -6,7 +6,7 @@ import java.util.Collections;
 // 6kyu
 // https://www.codewars.com/kata/5503013e34137eeeaa001648/train/java
 // 2021-04-14 T:19:42:24
-class Exercise_073_todo {
+class Exercise_073 {
 
     public static String print(int n) {
         if (n%2 == 0 || n < 0) return null;
