@@ -5,7 +5,7 @@ import java.util.Collections;
 // Give me a Diamond
 // 6kyu
 // https://www.codewars.com/kata/5503013e34137eeeaa001648/train/java
-//
+// 2021-04-14 T:19:42:24
 class Exercise_073_todo {
 
     public static String print(int n) {
