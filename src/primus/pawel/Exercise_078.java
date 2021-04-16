@@ -7,7 +7,7 @@ import java.util.Comparator;
 // 7kyu
 // https://www.codewars.com/kata/5663f5305102699bad000056/train/java
 // 2021-04-15 T:19:52:03
-class Exercises_078 {
+class Exercise_078 {
 
     public static int mxdiflg(String[] a1, String[] a2) {
 

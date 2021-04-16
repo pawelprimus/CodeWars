@@ -20,7 +20,7 @@ class Exercise_079_todo {
 
         for (int i = 0; i < string.length(); i++) {
 
-            while ()
+            //while ()
 
         }
 
