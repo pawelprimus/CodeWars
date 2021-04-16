@@ -8,7 +8,7 @@ import java.util.TreeMap;
 // 7 kyu
 // https://www.codewars.com/kata/57a93f93bb9944516d0000c1/train/java
 // 2021-04-16 T:17:55:28
-class Exercise_80 {
+class Exercise_080 {
 
     public  class Dictionary {
 
