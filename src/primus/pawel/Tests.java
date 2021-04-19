@@ -38,6 +38,14 @@ public class Tests {
 
     }
 
+    @Test void Exercise83(){
+        assertEquals(true, Exercise_083.checkIfPalindrome("abba"));
+        assertEquals(true, Exercise_083.checkIfPalindrome("abbba"));
+        assertEquals(false, Exercise_083.checkIfPalindrome("abbla"));
+        assertEquals(false, Exercise_083.checkIfPalindrome("abblas"));
+
+    }
+
 
 
 }
