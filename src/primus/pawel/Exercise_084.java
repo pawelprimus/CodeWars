@@ -6,21 +6,26 @@ package primus.pawel;
 class Exercise_084 {
 
     public class Block{
-        private int[] dimenson = new int[3];
 
-        Block(int[] dimenson) {
-            this.dimenson = dimenson;
+        private final int width;
+        private final int length;
+        private final int height;
+
+        Block(int... dimensions) {
+            this.width = dimensions[0];
+            this.length = dimensions[1];
+            this.height = dimensions[2];
         }
 
         public int getWidth(){
-            return dimenson[0];
+            return width;
         }
 
         public int getLength(){
-            return dimenson[1];
+            return length;
         }
         public int getHeight(){
-            return dimenson[2];
+            return height;
         }
 
         public int getVolume(){
