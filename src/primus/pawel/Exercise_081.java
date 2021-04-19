@@ -17,4 +17,10 @@ class Exercise_081 {
 
 /*  public static String printerError(String s) {
         return s.replaceAll("[a-m]", "").length() + "/" + s.length();
-    }*/
+    }
+
+     public static String printerError(String s) {
+        long errs = s.chars().filter( ch -> ch > 'm').count();
+        return errs+"/"+s.length();
+    }
+    */
