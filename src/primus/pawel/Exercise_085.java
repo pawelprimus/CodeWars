@@ -54,3 +54,33 @@ public class Exercise_085 {
         //availableMoves("D5");
     }
 }
+
+/*public static List<String> availableMoves(String position)
+    {
+        List<String> result = new ArrayList<>();
+        if ((position == null) || (!position.matches("[A-H][1-8]"))) return result;
+        for (char x: "ABCDEFGH".toCharArray())
+           for (char y : "12345678".toCharArray())
+               {
+                   int dX = Math.abs(x - position.charAt(0));
+                   int dY = Math.abs(y - position.charAt(1));
+                   if (((dX == dY) && (dX * dY > 0)) || ((dX * dY == 0) && (dX != dY)))
+                       result.add(Character.toString(x) + y);
+               }
+     return result;
+    }
+    public static List<String> availableMoves(String pos) {
+    if (pos == null || !pos.matches("[A-H][1-8]"))
+      return Collections.emptyList();
+    int qc = pos.charAt(0) - 'A', qr = pos.charAt(1) - '1';
+    List<String> result = new LinkedList<>();
+    for (int c = 0; c < 8; c++)
+      for (int r = 0; r < 8; r++)
+        if ((c == qc || r == qr) ^ Math.abs(c - qc) == Math.abs(r - qr))
+          result.add("" + (char) ('A' + c) + (char) ('1' + r));
+    return result;
+  }
+
+if (position == null || !position.matches("^[A-H][1-8]$")) return res;
+
+    */
