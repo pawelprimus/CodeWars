@@ -23,12 +23,8 @@ class Exercise_079 {
 
     public static String abbreviateWord(String word) {
         if (word.length() <= 3) return word;
-
-        StringBuilder newWord = new StringBuilder();
-
-        newWord.append(word.charAt(0)).append(word.length() - 2).append(word.charAt(word.length() - 1));
-
-        return newWord.toString();
+        int n = word.length() -2;
+        return "" + word.charAt(0) + n + word.charAt(word.length()-1);
     }
 
     public static void main(String[] args) {
@@ -37,3 +33,19 @@ class Exercise_079 {
     }
 
 }
+
+/*public String abbreviate(String s) {
+    Pattern p = Pattern.compile("[a-z]{4,}", Pattern.CASE_INSENSITIVE);
+    Matcher m = p.matcher(s);
+    StringBuffer sb = new StringBuffer();
+    while (m.find()) {
+      String g = m.group();
+      int l = g.length();
+      m.appendReplacement(sb, g.substring(0, 1) + (l - 2) + g.substring(l - 1, l));
+    }
+    m.appendTail(sb);
+    return sb.toString();
+  }
+
+
+  */
