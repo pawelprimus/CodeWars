@@ -4,29 +4,21 @@ package primus.pawel;
 // https://www.codewars.com/kata/5375f921003bf62192000746/train/java
 // 2021-04-15 T:20:10:38
 
-import java.util.ArrayList;
-import java.util.regex.Pattern;
-
-class Exercise_079_todo {
+class Exercise_079 {
 
     public static String abbreviate(String string) {
-
-        //String[] wordsArr = string.split(" ");
         StringBuilder sbResult = new StringBuilder();
-        Pattern p = Pattern.compile("[^a-zA-Z0-9]");
-
-        ArrayList<String> result = new ArrayList<>();
-        StringBuilder word = new StringBuilder();
+        StringBuilder sbWord = new StringBuilder();
 
         for (int i = 0; i < string.length(); i++) {
-
-            //while ()
-
+            if (!Character.isLetter(string.charAt(i))) {
+                sbResult.append(abbreviateWord(sbWord.toString())).append(string.charAt(i));
+                sbWord.delete(0, sbWord.length());
+            } else {
+                sbWord.append(string.charAt(i));
+            }
         }
-
-
-        System.out.println("Result " + sbResult.toString());
-        return null;
+        return sbResult.append(abbreviateWord(sbWord.toString())).toString();
     }
 
     public static String abbreviateWord(String word) {
@@ -41,6 +33,7 @@ class Exercise_079_todo {
 
     public static void main(String[] args) {
         abbreviate("elephant-rides are really fun!");
+        System.out.println(Character.isLetter('-'));
     }
 
 }
