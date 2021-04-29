@@ -7,7 +7,7 @@ import java.util.List;
 // 5kyu
 // https://www.codewars.com/kata/5547cc7dcad755e480000004
 // 2021-04-28 T:20:34:07
-class Exercise_074_todo {
+class Exercise_074 {
 
     public static List<long[]> removNb(long n) {
         List<long[]> resultList = new ArrayList<>(){};
