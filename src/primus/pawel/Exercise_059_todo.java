@@ -4,7 +4,7 @@ package primus.pawel;
 // 4kyu
 // https://www.codewars.com/kata/51ba717bb08c1cd60f00002f/train/java
 // 2021-04-07 T:23:33:46
-class Exercise_059 {
+class Exercise_059_todo {
 
     public static String rangeExtraction(int[] arr) {
 
