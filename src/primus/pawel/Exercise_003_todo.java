@@ -5,10 +5,28 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-
+// Next bigger number with the same digits
+// 4 kyu
 //https://www.codewars.com/kata/55983863da40caa2c900004e/train/java
-
+// 2021-04-29 T:21:44:25
 class Exercise_003_todo {
+
+
+    public static long nextBiggerNumber(long n)
+    {
+        String number = String.valueOf(n);
+        for (int i = 0; i < number.length(); i++) {
+
+        }
+
+
+        return n;
+    }
+
+
+
+
+
 
    /* public static long nextBiggerNumber(long n)
     {
@@ -37,7 +55,7 @@ class Exercise_003_todo {
 
         return n;
     }*/
-
+/*
     public static long nextBiggerNumber(long n)
     {
         String numStr = Long.toString(n);
@@ -47,11 +65,8 @@ class Exercise_003_todo {
         int indexBig = 1;
         int number;
 
-
-
-
         return n;
-    }
+    }*/
 
     public static void main(String[] args) {
 
