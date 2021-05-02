@@ -16,7 +16,7 @@ class Exercise_102 {
         for (int i = 0; i < clonedArr.length/2; i++) {
             result += clonedArr[i]* clonedArr[clonedArr.length-1-i];
         }
-        return result; 
+        return result;
     }
 
     public static void main(String[] args) {
