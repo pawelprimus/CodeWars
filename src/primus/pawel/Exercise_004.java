@@ -1,6 +1,9 @@
 package primus.pawel;
 
-import java.util.ArrayList;
+//
+//
+//
+//
 
 class Exercise_004 {
 

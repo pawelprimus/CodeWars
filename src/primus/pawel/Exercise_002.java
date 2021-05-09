@@ -1,7 +1,9 @@
 package primus.pawel;
 
-import java.util.HashMap;
-import java.util.Map;
+// Street Fighter 2 - Character Selection
+// 6kyu
+// https://www.codewars.com/kata/5853213063adbd1b9b0000be
+//
 
 class Exercise_002 {
 
