@@ -1,7 +1,8 @@
 package primus.pawel;
-//7kyu
-//https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/java
-//2021-03-19 T:21:43:35
+// You're a square!
+// 7kyu
+// https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/java
+// 2021-03-19 T:21:43:35
 
 class Exercise_024 {
 
@@ -9,6 +10,7 @@ class Exercise_024 {
         double sqrt = Math.sqrt(n);
         return ((sqrt - Math.floor(sqrt)) == 0);
     }
+
     public static void main(String[] args) {
 
         System.out.println(isSquare(-4));

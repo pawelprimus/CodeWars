@@ -1,5 +1,9 @@
 package primus.pawel;
-//https://www.codewars.com/kata/5264d2b162488dc400000001/train/java
+
+// Stop gninnipS My sdroW!
+// 6kyu
+// https://www.codewars.com/kata/5264d2b162488dc400000001/train/java
+//
 class Exercise_018 {
 
     public static String spinWords(String sentence) {
@@ -9,7 +13,7 @@ class Exercise_018 {
             if (words[i].length() > 4) {
                 words[i] = reversWord(words[i]);
             }
-            sb.append(words[i] + " ");
+            sb.append(words[i]).append(" ");
         }
 
         sb.delete(sb.length() - 1, sb.length());

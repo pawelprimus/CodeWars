@@ -1,13 +1,12 @@
 package primus.pawel;
-
+// Even or Odd
+// 8kyu
+// https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/java
+//
 class Exercise_011 {
 
-    //https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/java
-
     public static String even_or_odd(int number) {
-        if(number%2 == 0){
-            return "Even";
-        }else return  "Odd";
+        return (number % 2 == 0) ? "Even" : "Odd";
     }
 
 

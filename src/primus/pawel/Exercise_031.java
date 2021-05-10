@@ -12,7 +12,7 @@ class Exercise_031 {
         for (int i = 0; i < number.length(); i++) {
             resultSB.append(Character.getNumericValue(number.charAt(i)) * Character.getNumericValue(number.charAt(i)));
         }
-        return Integer.valueOf(resultSB.toString());
+        return Integer.parseInt(resultSB.toString());
     }
 
     public static void main(String[] args) {

@@ -1,5 +1,5 @@
 package primus.pawel;
-
+// Decode the Morse code
 // 6 kyu
 // https://www.codewars.com/kata/54b724efac3d5402db00065e/train/java
 // 2021-03-18 T:18:11:26
@@ -15,7 +15,7 @@ class Exercise_022 {
         StringBuilder morseSentence = new StringBuilder("");
         StringBuilder morseChar = new StringBuilder("");
 
-        if (morseCode.isEmpty() || morseCode==" ") {
+        if (morseCode.isEmpty() || morseCode.equals(" ")) {
             return "";
         } else {
             morseCode += " ";
@@ -30,14 +30,14 @@ class Exercise_022 {
 
                 if (i == morseCode.length() - 1) {
                     //System.out.println("morse char final " + morseChar.toString());
-                   // morseSentence.append(MorseCodeChar(morseChar.toString()));
+                    // morseSentence.append(MorseCodeChar(morseChar.toString()));
                     morseSentence.append(morseMap.get(morseChar.toString()));
                     //System.out.println(morseSentence);
                     break;
                 }
 
                 if (morseCode.charAt(i) == ' ') {
-                    if(morseChar.length()>0) {
+                    if (morseChar.length() > 0) {
                         morseSentence.append(morseMap.get(morseChar.toString()));
                     }
                     // System.out.println(morseSentence);
@@ -51,10 +51,10 @@ class Exercise_022 {
             }
         }
 
-        while(morseSentence.charAt(morseSentence.length()-1) == ' '){
-            morseSentence.deleteCharAt(morseSentence.length()-1);
+        while (morseSentence.charAt(morseSentence.length() - 1) == ' ') {
+            morseSentence.deleteCharAt(morseSentence.length() - 1);
         }
-        while(morseSentence.charAt(0) == ' '){
+        while (morseSentence.charAt(0) == ' ') {
             morseSentence.deleteCharAt(0);
         }
 

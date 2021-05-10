@@ -1,19 +1,16 @@
 package primus.pawel;
 
-//
-//
-//
+// Integers: Recreation One
+// 5kyu
+// https://www.codewars.com/kata/55aa075506463dac6600010d/train/java
 //
 
 class Exercise_004 {
 
     public static String listSquared(long m, long n) {
-        // your code
-
         int sum = 0;
         int resIndex = 0;
-       // ArrayList<ArrayList<String>> result = new ArrayList<>();
-            String result= "[";
+        String result = "[";
 
         for (long i = m; i <= n; i++) {
 
@@ -30,14 +27,13 @@ class Exercise_004 {
 
                 String a = String.valueOf(i);
                 String b = String.valueOf(sum);
-                if(resIndex==0){
-                    result+= "[" + a + ", " + b  + "]";
-                } else
-                {
-                    result+= ", [" + a + ", " + b  + "]";
+                if (resIndex == 0) {
+                    result += "[" + a + ", " + b + "]";
+                } else {
+                    result += ", [" + a + ", " + b + "]";
                 }
-               // result.get(resIndex).add(a);
-               // result.get(resIndex).add(b);*/
+                // result.get(resIndex).add(a);
+                // result.get(resIndex).add(b);*/
 
                 resIndex++;
             }
@@ -62,7 +58,7 @@ class Exercise_004 {
 
         System.out.println(listSquared(1, 42));
 
-       // System.out.println(checkPerfectSquare(25));
+        // System.out.println(checkPerfectSquare(25));
 
     }
 

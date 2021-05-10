@@ -1,29 +1,25 @@
 package primus.pawel;
-//https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/java
-
+// Mumbling
+// 7kyu
+// https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/java
+//
 
 class Exercise_010 {
 
     public static String accum(String s) {
-
-        String result = "";
+        StringBuilder resultsb = new StringBuilder("");
 
         for (int i = 0; i < s.length(); i++) {
-            //System.out.println(Character.toUpperCase(s.charAt(i)));
-            result += (Character.toUpperCase(s.charAt(i)));
-            for (int j = (s.length() -i ); j < s.length(); j++) {
-                //System.out.println(Character.toLowerCase(s.charAt(i)));
-                result += Character.toLowerCase(s.charAt(i));
+            resultsb.append(Character.toUpperCase(s.charAt(i)));
+            for (int j = (s.length() - i); j < s.length(); j++) {
+                resultsb.append(Character.toLowerCase(s.charAt(i)));
             }
-            result+= "-";
+            resultsb.append("-");
         }
-
-        return result.substring(0, result.length() - 1);
-
+        return resultsb.substring(0, resultsb.length() - 1);
     }
 
     public static void main(String[] args) {
-
 
         System.out.println(accum("Abcd"));
 

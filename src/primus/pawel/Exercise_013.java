@@ -1,5 +1,11 @@
 package primus.pawel;
-//https://www.codewars.com/kata/554b4ac871d6813a03000035/train/java
+
+import java.util.Arrays;
+
+// Highest and Lowest
+// 7kyu
+// https://www.codewars.com/kata/554b4ac871d6813a03000035/train/java
+//
 class Exercise_013 {
 
     public static String highAndLow(String numbers) {
@@ -31,6 +37,15 @@ class Exercise_013 {
     }
 
     public static void main(String[] args) {
-        System.out.println(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
+        System.out.println(highAndLow2("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
+    }
+
+    public static String highAndLow2(String numbers) {
+        String[] dividedNumbers = numbers.split("[ ]");
+        StringBuilder sbResult = new StringBuilder();
+        sbResult.append(Arrays.stream(dividedNumbers).mapToInt(Integer::parseInt).max().orElse(-1))
+        .append(" ");
+        sbResult.append(Arrays.stream(dividedNumbers).mapToInt(Integer::parseInt).min().orElse(-1));
+        return sbResult.toString();
     }
 }

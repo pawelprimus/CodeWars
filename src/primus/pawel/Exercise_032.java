@@ -12,10 +12,8 @@ class Exercise_032 {
         int w = 0;
         int e = 0;
         if (walk.length == 10) {
-            for (int i = 0; i < walk.length; i++) {
-
-
-                switch (walk[i]) {
+            for (char c : walk) {
+                switch (c) {
                     case 'n':
                         n++;
                         break;
@@ -32,7 +30,7 @@ class Exercise_032 {
             }
         } else return false;
 
-        return (w==e && s==n);
+        return (w == e && s == n);
     }
 
     public static void main(String[] args) {

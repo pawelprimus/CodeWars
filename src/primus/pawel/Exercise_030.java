@@ -1,20 +1,20 @@
 package primus.pawel;
+
 // Exes and Ohs
 // 7kyu
 // https://www.codewars.com/kata/55908aad6620c066bc00002a/train/java
 // 2021-03-21 T:12:39:45
 class Exercise_030 {
 
-    public static boolean getXO (String str) {
+    public static boolean getXO(String str) {
         int xNum = 0;
         int oNum = 0;
 
-           // str.toUpperCase();
-            for (int i = 0; i < str.length(); i++) {
-                if (str.toUpperCase().charAt(i) == 'X') xNum++;
-                if (str.toUpperCase().charAt(i) == 'O') oNum++;
-            }
-       return xNum == oNum;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.toUpperCase().charAt(i) == 'X') xNum++;
+            if (str.toUpperCase().charAt(i) == 'O') oNum++;
+        }
+        return xNum == oNum;
     }
 
     public static void main(String[] args) {

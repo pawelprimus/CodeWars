@@ -3,6 +3,7 @@ package primus.pawel;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+// Your order, please
 // 6kyu
 // https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/java
 // 2021-03-20 T:12:18:58
@@ -10,7 +11,7 @@ class Exercise_028 {
 
     public static String order(String words) {
 
-        if(words.isEmpty()){
+        if (words.isEmpty()) {
             return "";
         }
 
@@ -20,14 +21,14 @@ class Exercise_028 {
         for (int i = 0; i < splitedWords.length; i++) {
             Matcher m = Pattern.compile("\\d+").matcher(splitedWords[i]);
             while (m.find()) {
-                orderNum = Integer.valueOf(m.group());
+                orderNum = Integer.parseInt(m.group());
                 // System.out.println(m.group());
             }
-            orderedWords[orderNum-1] = splitedWords[i];
+            orderedWords[orderNum - 1] = splitedWords[i];
         }
 
         StringBuilder builder = new StringBuilder();
-        for(String s : orderedWords) {
+        for (String s : orderedWords) {
             builder.append(s + " ");
         }
 

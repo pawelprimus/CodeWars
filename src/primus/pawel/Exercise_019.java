@@ -1,7 +1,9 @@
 package primus.pawel;
-/*-----4kyu
-https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/train/java*/
 
+// Snail
+// 4kyu
+// https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/train/java*/
+//
 class Exercise_019 {
     public static int[] snail(int[][] array) {
         if (array[0].length <= 0) {

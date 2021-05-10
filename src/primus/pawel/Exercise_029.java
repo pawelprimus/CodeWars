@@ -1,4 +1,5 @@
 package primus.pawel;
+// Jaden Casing Strings
 // 7kyu
 // https://www.codewars.com/kata/5390bac347d09b7da40006f6/train/java
 // 2021-03-21 T:11:48:27
@@ -6,7 +7,6 @@ package primus.pawel;
 
 class Exercise_029 {
     public static String toJadenCase(String phrase) {
-
 
         StringBuilder toJadenCaseSB = new StringBuilder("");
         try {
@@ -18,7 +18,7 @@ class Exercise_029 {
                 //System.out.println(splitedWords[i]);
                 toJadenCaseSB.append(splitedWords[i] + " ");
             }
-        } catch (NullPointerException e){
+        } catch (NullPointerException e) {
             return null;
         }
         return toJadenCaseSB.toString().trim();

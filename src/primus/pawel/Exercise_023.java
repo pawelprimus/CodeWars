@@ -1,19 +1,24 @@
 package primus.pawel;
-//kyu 7
-//https://www.codewars.com/kata/56747fd5cb988479af000028/train/java
-//2021-03-19 T:21:29:52
+// Get the Middle Character
+// kyu 7
+// https://www.codewars.com/kata/56747fd5cb988479af000028/train/java
+// 2021-03-19 T:21:29:52
 
 class Exercise_023 {
 
     public static String getMiddle(String word) {
-        String result = "";
+      /*  String result = "";
         if(word.length()%2 == 0){
             result += word.charAt(word.length()/2 - 1);
             result += word.charAt(word.length()/2);
         } else {
             result += word.charAt(word.length()/2);
         }
-        return result;
+        */
+        // return result;
+        return (word.length() % 2 == 0) ? "" + word.charAt(word.length() / 2 - 1) + word.charAt(word.length() / 2) : "" + word.charAt(word.length() / 2);
+
+
     }
 
     public static void main(String[] args) {

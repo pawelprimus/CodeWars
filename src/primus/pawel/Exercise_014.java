@@ -1,6 +1,8 @@
 package primus.pawel;
-
-//https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/java
+// Descending Order
+// 7kyu
+// https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/java
+//
 
 import java.util.ArrayList;
 
@@ -9,7 +11,7 @@ class Exercise_014 {
     public static int sortDesc(final int num) {
         //Your code
 
-        if(num==0){
+        if (num == 0) {
             return 0;
         }
 
@@ -25,13 +27,13 @@ class Exercise_014 {
         arr.sort(Integer::compareTo);
 
         for (int i = arr.size() - 1; i > -1; i--) {
-           // System.out.println("Arr = " + arr.get(i));
+            // System.out.println("Arr = " + arr.get(i));
             result.append(arr.get(i));
         }
         //System.out.println(result);
         //number = Integer.parseInt(result.toString());
         //String resultString = result.toString();
-       // int number2 = Integer.parseInt(resultString);
+        // int number2 = Integer.parseInt(resultString);
 
         return Integer.parseInt(result.toString());
         //arr.forEach((n) -> System.out.println(n));

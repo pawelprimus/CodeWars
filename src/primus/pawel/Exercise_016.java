@@ -1,7 +1,9 @@
 package primus.pawel;
 
-//https://www.codewars.com/kata/526571aae218b8ee490006f4/train/java
-
+// Bit Counting
+// 6kyu
+// https://www.codewars.com/kata/526571aae218b8ee490006f4/train/java
+//
 class Exercise_016 {
 
     public static int countBits(int n) {

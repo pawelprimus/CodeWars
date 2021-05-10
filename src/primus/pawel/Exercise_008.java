@@ -2,9 +2,10 @@ package primus.pawel;
 
 import java.util.HashMap;
 import java.util.Map;
-
-//https://www.codewars.com/kata/54da5a58ea159efa38000836/train/java
-
+// Find the odd int
+// 6kyu
+// https://www.codewars.com/kata/54da5a58ea159efa38000836/train/java
+//
 class Exercise_008 {
 
     public static int findIt(int[] a) {
@@ -12,11 +13,11 @@ class Exercise_008 {
         int odd = 0;
         Map<Integer, Boolean> numbersMap = new HashMap<>();
 
-        for (int i = 0; i < a.length ; i++) {
-                numbersMap.put(a[i], true);
+        for (int i = 0; i < a.length; i++) {
+            numbersMap.put(a[i], true);
         }
 
-        for (int i = 0; i <  a.length; i++) {
+        for (int i = 0; i < a.length; i++) {
             numbersMap.put(a[i], !numbersMap.get(a[i]));
         }
 
@@ -26,13 +27,12 @@ class Exercise_008 {
                 odd = entry.getKey();
             }
         }
-
         return odd;
     }
 
     public static void main(String[] args) {
 
-        int[] arr = {20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5};
+        int[] arr = {20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5};
         System.out.println(findIt(arr));
 
     }
