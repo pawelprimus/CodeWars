@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 class Exercise_118 {
 
     public static String meeting(String s) {
-        String[] persons = s.split("[\\;+:]");
+        String[] persons = s.split("[;+:]");
         LinkedList<Person> personsLinkedList= new LinkedList<>();
         for (int i = 0; i < persons.length; i = i +2) {
         personsLinkedList.add(new Person(persons[i].toUpperCase(), persons[i+1].toUpperCase()));
@@ -22,6 +22,7 @@ class Exercise_118 {
         StringBuilder resultStringChain = new StringBuilder();
         for (Person person : personsLinkedList){
             resultStringChain.append(person.toString());
+            System.out.println(person.toString());
         }
 
         return resultStringChain.toString();
