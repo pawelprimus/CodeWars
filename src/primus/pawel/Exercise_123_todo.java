@@ -4,7 +4,7 @@ package primus.pawel;
 // 6kyu
 // https://www.codewars.com/kata/5dad6e5264e25a001918a1fc/train/java
 // 2021-05-12 T:20:54:04
-class Exercise_123 {
+class Exercise_123_todo {
 
     public static String decode(String r) {
 
@@ -26,9 +26,10 @@ class Exercise_123 {
 
     public static Character codeChar(char charToCode, int password) {
       //  int charNum = (charToCode - 97) * password % 26;
-        int charNum = modInverse( charToCode - 97) * password) ,26 ));
+       // int charNum = modInverse( charToCode - 97) * password) ,26 ));
         System.out.println(modInverse((charToCode - 97) * password, 26));
-        return ((char) (charNum + 97));
+       // return ((char) (charNum + 97));
+        return  null;
     }
 
     static int modInverse(int a, int m)
