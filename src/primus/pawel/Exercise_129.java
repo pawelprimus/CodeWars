@@ -32,3 +32,24 @@ class Exercise_129 {
         josephusSurvivor(11, 9);
     }
 }
+
+/* public static int josephusSurvivor(final int n, final int k) {
+
+        List<Integer> people = new LinkedList<>();
+        for (int i = 1; i <= n; i++) {
+            people.add(i);
+        }
+
+        Iterator iter = people.iterator();
+        while (people.size() > 1) {
+            for (int i = 0; i < k; i++) {
+                if (!iter.hasNext()) {
+                    iter = people.iterator();
+                }
+                iter.next();
+            }
+            iter.remove();
+        }
+
+        return people.get(0);
+    }   */
