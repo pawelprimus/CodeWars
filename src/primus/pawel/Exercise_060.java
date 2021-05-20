@@ -7,9 +7,13 @@ package primus.pawel;
 class Exercise_060 {
 
     public static boolean solution(String str, String ending) {
-        if (str == "" || ending.length() > str.length()) return false;
+        if (str == "" || ending.length() > str.length()) {
+            return false;
+        }
         for (int i = 0; i < ending.length(); i++) {
-            if (str.charAt(str.length() - ending.length() + i) != ending.charAt(i)) return false;
+            if (str.charAt(str.length() - ending.length() + i) != ending.charAt(i)) {
+                return false;
+            }
         }
         return true;
     }

@@ -21,7 +21,7 @@ class Exercise_069 {
             }
         }
 
-        return result.toArray(new String[result.size()]);
+        return result.toArray(new String[0]);
     }
 
     public static void main(String[] args) {

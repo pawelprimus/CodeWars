@@ -15,7 +15,6 @@ class Exercise_043 {
         List<Integer> oddIndexes = new ArrayList<>();
         List<Integer> oddNumbers = new ArrayList<>();
 
-        int j = 0;
         for (int i = 0; i < array.length; i++) {
 
             if (array[i] % 2 != 0) {
@@ -29,7 +28,6 @@ class Exercise_043 {
 
         int i = 0;
         for (int index : oddIndexes) {
-
             array[index] = oddNumbers.get(i);
             i++;
         }
@@ -42,8 +40,6 @@ class Exercise_043 {
         int arr[] = {5, 3, 2, 8, 1, 4};
 
         int[] sortedArr = sortArray(arr);
-
-
 
        /* for(int value : sortedArr){
             System.out.println(value);

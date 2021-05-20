@@ -12,8 +12,8 @@ class Exercise_055 {
         String[] numArray = strng.split(" ");
         LinkedHashMap<String, Integer> weightNums = new LinkedHashMap<>();
         StringBuilder sbResult = new StringBuilder("");
-        for (int i = 0; i < numArray.length; i++) {
-            weightNums.put(numArray[i], Integer.valueOf(getWeight(numArray[i])));
+        for (String s : numArray) {
+            weightNums.put(s, Integer.valueOf(getWeight(s)));
         }
 
         LinkedHashMap<String, Integer> sortedKeysMap = new LinkedHashMap<>();

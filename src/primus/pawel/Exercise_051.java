@@ -1,4 +1,5 @@
 package primus.pawel;
+
 // Regex validate PIN code
 // 7kyu
 // https://www.codewars.com/kata/55f8a9c06c018a0d6e000132/train/java
@@ -6,7 +7,7 @@ package primus.pawel;
 class Exercise_051 {
     public static boolean validatePin(String pin) {
         String regex = "[0-9]+";
-        return (pin.matches(regex) && (pin.length() == 4 || pin.length()==6) );
+        return (pin.matches(regex) && (pin.length() == 4 || pin.length() == 6));
     }
 
     public static void main(String[] args) {

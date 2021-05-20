@@ -10,13 +10,11 @@ class Exercise_056 {
             String[] orginalArr = original.split(" ");
             StringBuilder sbResult = new StringBuilder("");
 
-            for (int i = 0; i < orginalArr.length; i++) {
-                sbResult.append(new StringBuilder(orginalArr[i]).reverse()).append(" ");
+            for (String s : orginalArr) {
+                sbResult.append(new StringBuilder(s).reverse()).append(" ");
             }
             return sbResult.toString().trim();
         }
-        {
-            return original;
-        }
+        return original;
     }
 }

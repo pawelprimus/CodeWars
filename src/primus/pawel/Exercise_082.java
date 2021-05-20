@@ -11,11 +11,9 @@ import java.util.List;
 class Exercise_082 {
 
     public static int ConvertBinaryArrayToInt(List<Integer> binary) {
-
         int result = 0;
         int binaryRep = 1;
         for (int i = binary.size() - 1; i >= 0; i--) {
-
             result = result + binary.get(i) * binaryRep;
             binaryRep = binaryRep * 2;
         }

@@ -12,7 +12,7 @@ class Exercise_063 {
         ArrayList<Character> charLL;
         charLL = (ArrayList<Character>) str1.chars().mapToObj(c -> (char) c).collect(Collectors.toList());
         for (int i = 0; i < str2.length(); i++) {
-            if (charLL.contains((Character) str2.charAt(i))) {
+            if (charLL.contains(str2.charAt(i))) {
                 charLL.remove((Character) str2.charAt(i));
                 //System.out.println(str2.charAt(i));
             } else return false;

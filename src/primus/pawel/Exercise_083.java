@@ -11,7 +11,7 @@ class Exercise_083 {
         for (int i = 0; i < s.length(); i++) {
             for (int j = 0; j <= i; j++) {
                 //System.out.print(s.substring(j,longestPalindromeLength + j) + " ");
-                if (checkIfPalindrome((s.substring(j, longestPalindromeLength + j))) == true)
+                if (checkIfPalindrome((s.substring(j, longestPalindromeLength + j))))
                     return longestPalindromeLength;
             }
             //System.out.println("longestPalindromeLength: " + longestPalindromeLength);

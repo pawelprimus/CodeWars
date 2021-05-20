@@ -6,7 +6,7 @@ package primus.pawel;
 // 2021-04-11 T:20:38:55
 class Exercise_066 {
     public static long findNextSquare(long sq) {
-        return checkPerfectSquare(sq) == true ? (long)Math.pow((long)(Math.sqrt(sq) + 1), 2) : -1;
+        return checkPerfectSquare(sq) ? (long)Math.pow((long)(Math.sqrt(sq) + 1), 2) : -1;
     }
 
     static boolean checkPerfectSquare(long number) {

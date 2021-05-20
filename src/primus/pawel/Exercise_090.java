@@ -20,10 +20,8 @@ class Exercise_090 {
         }
         StringBuilder result = new StringBuilder();
 
-        Iterator itr = wordsHash.iterator();
-
-        while (itr.hasNext()) {
-            result.append(itr.next()).append(" ");
+        for (String hash : wordsHash) {
+            result.append(hash).append(" ");
         }
 
         return result.toString().trim();

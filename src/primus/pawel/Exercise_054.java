@@ -6,18 +6,19 @@ package primus.pawel;
 // 2021-04-02 T:23:03:38
 class Exercise_054 {
     public static boolean check(String sentence) {
-        sentence =  sentence.toLowerCase();
+        sentence = sentence.toLowerCase();
         boolean[] charFlags = new boolean[26];
 
         for (char c : sentence.toCharArray()) {
-
             if ((int) c >= 97 && (int) c <= 122) {
                 charFlags[(int) c - 97] = true;
             }
         }
 
-        for (int i = 0; i < charFlags.length; i++) {
-            if (charFlags[i] == false) return false;
+        for (boolean charFlag : charFlags) {
+            if (!charFlag) {
+                return false;
+            }
         }
         return true;
     }

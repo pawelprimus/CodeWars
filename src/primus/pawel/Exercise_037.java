@@ -10,21 +10,21 @@ class Exercise_037 {
 
     public static int findEvenIndex(int[] arr) {
 
-
         int left = 0;
         int right = Arrays.stream(arr).sum();
-        for (int i=0; i<arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             right -= arr[i];
-            if (left == right) return i;
+            if (left == right) {
+                return i;
+            }
             left += arr[i];
         }
         return -1;
-
     }
 
     public static void main(String[] args) {
 
-        int[] arr =  {1, 1, 2};
+        int[] arr = {1, 1, 2};
         System.out.println(findEvenIndex(arr));
     }
 

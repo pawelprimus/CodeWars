@@ -17,13 +17,17 @@ class Exercise_059 {
                 sbResult.append(wrapQue(que));
                 que.clear();
                 que.add(arr[i]);
-                if (i == arr.length -1) sbResult.append(wrapQue(que));
+                if (i == arr.length - 1) {
+                    sbResult.append(wrapQue(que));
+                }
             } else {
                 que.add(arr[i]);
-                if (i == arr.length -1) sbResult.append(wrapQue(que));
+                if (i == arr.length - 1){
+                    sbResult.append(wrapQue(que));
+                }
             }
         }
-        return sbResult.deleteCharAt(sbResult.length()-1).toString();
+        return sbResult.deleteCharAt(sbResult.length() - 1).toString();
     }
 
 
@@ -36,7 +40,7 @@ class Exercise_059 {
 
     public static void main(String[] args) {
         //System.out.println(rangeExtraction(new int[]{-6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20, 21, 26}));
-        System.out.println(rangeExtraction(new int[]{-3,-2,-1,2,10,15,16,18,19,20}));
+        System.out.println(rangeExtraction(new int[]{-3, -2, -1, 2, 10, 15, 16, 18, 19, 20}));
         LinkedList<Integer> ls = new LinkedList<>();
         ls.add(1);
         ls.add(2);

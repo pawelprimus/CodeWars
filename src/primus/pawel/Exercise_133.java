@@ -7,7 +7,7 @@ import java.util.List;
 // 7kyu
 // https://www.codewars.com/kata/5a71939d373c2e634200008e/train/java
 // 2021-05-19 T:18:27:31
-class Exercise_133_todo {
+class Exercise_133 {
     public static String solve(String s) {
         List<Integer> spaceIndexes = new LinkedList<>();
         for (int i = 0; i < s.length(); i++) {

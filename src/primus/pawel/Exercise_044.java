@@ -4,29 +4,23 @@ package primus.pawel;
 // https://www.codewars.com/kata/550498447451fbbd7600041c/train/java
 // 2021-03-29 T:23:36:01
 
-import java.math.BigInteger;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 class Exercise_044 {
 
 
     public static boolean comp(int[] a, int[] b) {
 
-
-        if( a == null || b == null) return false;
+        if (a == null || b == null) return false;
 
         for (int i = 0; i < a.length; i++) {
-           a[i] = (int) Math.pow(a[i] , 2);
+            a[i] = (int) Math.pow(a[i], 2);
         }
 
         Arrays.sort(a);
         Arrays.sort(b);
 
-
-        return Arrays.equals(a,b);
+        return Arrays.equals(a, b);
     }
 
 /*    public static boolean comp(int[] a, int[] b) {
@@ -48,7 +42,7 @@ class Exercise_044 {
         int[] a = new int[]{121, 144, 19, 161, 19, 144, 19, 11};
         int[] b = new int[]{121, 14641, 20736, 361, 25921, 361, 20736, 361};
 
-        System.out.println(comp(a,b));
+        System.out.println(comp(a, b));
 
     }
 

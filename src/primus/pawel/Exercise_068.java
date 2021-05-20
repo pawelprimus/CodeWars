@@ -8,6 +8,7 @@ import java.util.Collections;
 // https://www.codewars.com/kata/550554fd08b86f84fe000a58/train/java
 // 2021-04-11 T:21:06:49
 class Exercise_068 {
+
     public static String[] inArray(String[] array1, String[] array2) {
 
         ArrayList<String> resultArray = new ArrayList<>();
@@ -21,7 +22,7 @@ class Exercise_068 {
             }
         }
         Collections.sort(resultArray);
-        return resultArray.toArray(new String[resultArray.size()]);
+        return resultArray.toArray(new String[0]);
     }
 
 }

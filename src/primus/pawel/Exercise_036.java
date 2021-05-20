@@ -1,4 +1,5 @@
 package primus.pawel;
+
 // Playing with digits
 // 6kyu
 // https://www.codewars.com/kata/5552101f47fc5178b1000050/train/java
@@ -9,13 +10,12 @@ class Exercise_036 {
 
         StringBuilder numberStr = new StringBuilder(Integer.toString(n));
         double sum = 0;
-        int k = 0;
+        int k;
         for (int i = 0; i < numberStr.length(); i++) {
-
-            sum += Math.pow(Character.getNumericValue(numberStr.charAt(i)), (p+i));
+            sum += Math.pow(Character.getNumericValue(numberStr.charAt(i)), (p + i));
         }
-        k = (int)(sum/n);
-        return  ((n * k) == sum) ?  k :  -1;
+        k = (int) (sum / n);
+        return ((n * k) == sum) ? k : -1;
     }
 
     public static void main(String[] args) {

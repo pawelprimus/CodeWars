@@ -7,7 +7,7 @@ package primus.pawel;
 class Exercise_062 {
 
     public static boolean isPrime(int num) {
-        if (num <= 2) return false;
+        if (num < 2) return false;
         if (num == 2) return true;
         if (num % 2 == 0) return false;
         for (int i = 3; i <= Math.sqrt(num); i += 2) {

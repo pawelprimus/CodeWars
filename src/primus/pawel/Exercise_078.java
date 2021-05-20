@@ -11,7 +11,9 @@ class Exercise_078 {
 
     public static int mxdiflg(String[] a1, String[] a2) {
 
-        if (a1.length == 0 || a2.length == 0) return -1;
+        if (a1.length == 0 || a2.length == 0) {
+            return -1;
+        }
 
         int a1Max = Arrays.stream(a1).max(Comparator.comparing(String::length)).get().length();
         int a1Min = Arrays.stream(a1).min(Comparator.comparing(String::length)).get().length();

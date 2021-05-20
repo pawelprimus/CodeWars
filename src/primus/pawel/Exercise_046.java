@@ -9,14 +9,16 @@ class Exercise_046 {
     public static double findUniq(double arr[]) {
 
         if (arr[0] != arr[1]) {
-            if (arr[2] == arr[0]) return arr[1];
-            else return arr[0];
+            if (arr[2] == arr[0]) {
+                return arr[1];
+            } else {
+                return arr[0];
+            }
         } else {
-            for (int i = 0; i < arr.length; i++) {
-                if (arr[i] != arr[0]) return arr[i];
+            for (double v : arr) {
+                if (v != arr[0]) return v;
             }
         }
-
         return 0;
     }
 

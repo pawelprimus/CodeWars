@@ -23,21 +23,23 @@ class Exercise_047 {
 
                 switch (braces.charAt(i)) {
                     case ')':
-                        if (que.get(que.size() - 1) == '(') que.remove(que.size() - 1); else return false;
+                        if (que.get(que.size() - 1) == '(') que.remove(que.size() - 1);
+                        else return false;
                         break;
                     case '}':
-                        if (que.get(que.size() - 1) == '{') que.remove(que.size() - 1); else return false;
+                        if (que.get(que.size() - 1) == '{') que.remove(que.size() - 1);
+                        else return false;
                         break;
                     case ']':
-                        if (que.get(que.size() - 1) == '[') que.remove(que.size() - 1); else return false;
+                        if (que.get(que.size() - 1) == '[') que.remove(que.size() - 1);
+                        else return false;
                         break;
                     default:
                         return false;
                 }
-
             }
         }
-        return que.size()==0;
+        return que.size() == 0;
     }
 
     public static void main(String[] args) {

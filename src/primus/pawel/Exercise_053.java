@@ -11,9 +11,7 @@ class Exercise_053 {
             if((int)array[i+1] - (int)array[i] != 1 ){
                 return (char)((int)array[i]+1);
             }
-
         }
-
         return 0;
     }
 

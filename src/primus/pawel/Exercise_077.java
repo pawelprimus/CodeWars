@@ -10,7 +10,7 @@ class Exercise_077 {
 
         String winnerName = "";
 
-        if (firstAttacker != fighter1.name) {
+        if (!firstAttacker.equals(fighter1.name)) {
             Fighter temp = fighter1;
             fighter1 = fighter2;
             fighter2 = temp;

@@ -8,8 +8,6 @@ class Exercise_048 {
 
     public static String longest(String s1, String s2) {
         boolean[] occuerences = new boolean[26];
-        s1.toLowerCase();
-        s2.toLowerCase();
 
         for (int i = 0; i < s1.length(); i++) {
             occuerences[(int) s1.charAt(i) - 97] = true;
@@ -20,7 +18,9 @@ class Exercise_048 {
 
         StringBuilder sbResult = new StringBuilder();
         for (int i = 0; i < occuerences.length; i++) {
-            if (occuerences[i]) sbResult.append((char) (i + 97));
+            if (occuerences[i]) {
+                sbResult.append((char) (i + 97));
+            }
         }
         return sbResult.toString();
     }
