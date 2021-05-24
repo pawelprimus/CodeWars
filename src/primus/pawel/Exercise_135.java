@@ -10,7 +10,11 @@ class Exercise_135 {
         for (int i = 0; i < n; i++) {
             result.append("+".repeat(n)).append("\n");
         }
-        result.delete(result.length() -1, result.length());
-        return result.toString();
+        return result.toString().trim();
     }
 }
+
+/* public static final String generateShape(int n) {
+        return ("+".repeat(n) + "\n").repeat(n).trim();
+    }
+    */
