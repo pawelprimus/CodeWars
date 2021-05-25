@@ -11,8 +11,8 @@ class Exercise_094 {
         int resultIndex = 0;
         int temp = 0;
         for (int i = 0; i < numbers.length; i++) {
-            temp =numbers[i];
-            if(temp < 0 ) temp *= -1;
+            temp = numbers[i];
+            if (temp < 0) temp *= -1;
             if (String.valueOf(temp).length() > result) {
                 result = String.valueOf(temp).length();
                 resultIndex = i;

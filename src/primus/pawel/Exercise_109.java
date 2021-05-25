@@ -8,8 +8,8 @@ import java.util.LinkedList;
 // 2021-05-06 T:01:33:00
 class Exercise_109 {
     public static String[] dup(String[] arr) {
-        LinkedList<String> resultLS= new  LinkedList<String>();
-        for(String word: arr){
+        LinkedList<String> resultLS = new LinkedList<>();
+        for (String word : arr) {
             resultLS.add(removeDuplicate(word));
         }
 
@@ -18,7 +18,7 @@ class Exercise_109 {
 
     public static String removeDuplicate(String word) {
         StringBuilder result = new StringBuilder(word);
-        int length = word.length()-1;
+        int length = word.length() - 1;
         for (int i = 0; i < length; i++) {
             if (result.charAt(i) == result.charAt(i + 1)) {
                 result.delete(i, i + 1);

@@ -1,6 +1,7 @@
 package primus.pawel;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 // Sum of array singles
 // 7kyu
@@ -10,18 +11,18 @@ class Exercise_107 {
 
     public static int repeats(int[] arr) {
         int sum = 0;
-        HashMap<Integer,Integer> map = new HashMap<>();
-        for (int i = 0; i < arr.length; i++) {
-            if (!map.containsKey(arr[i])) {
-                map.put(arr[i], 1);
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int value : arr) {
+            if (!map.containsKey(value)) {
+                map.put(value, 1);
             } else {
-                map.replace(arr[i], map.get(arr[i]) + 1);
+                map.replace(value, map.get(value) + 1);
             }
         }
 
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
             //System.out.println(entry.getKey() + "/" + entry.getValue());
-            if(entry.getValue() == 1) {
+            if (entry.getValue() == 1) {
                 sum += entry.getKey();
             }
         }
@@ -29,6 +30,6 @@ class Exercise_107 {
     }
 
     public static void main(String[] args) {
-        repeats(new int []{16, 0, 11, 4, 8, 16, 0, 11});
+        repeats(new int[]{16, 0, 11, 4, 8, 16, 0, 11});
     }
 }

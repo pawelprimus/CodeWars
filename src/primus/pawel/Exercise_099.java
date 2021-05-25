@@ -18,7 +18,10 @@ class Exercise_099 {
         for (int i = 0; i < array.length / 2; i++) {
             resultArray[i] = (array[i] + array[array.length - 1 - i]);
         }
-        if (array.length % 2 != 0) resultArray[array.length / 2] = array[array.length / 2];
+        if (array.length % 2 != 0) {
+            resultArray[array.length / 2] = array[array.length / 2];
+        }
+
         return resultArray;
     }
 
