@@ -9,7 +9,7 @@ class Exercise_137 {
     public static String shorterReverseLonger(String a, String b) {
         StringBuilder rev = new StringBuilder();
         StringBuilder result = new StringBuilder();
-        if (a.length() > b.length()) {
+        if (a.length() >= b.length()) {
             rev.append(a).reverse();
             result.append(b).append(rev.toString()).append(b);
         } else {
