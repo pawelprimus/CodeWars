@@ -14,7 +14,23 @@ class Exercise_139 {
         map.put("Nickels", 0);
         map.put("Dimes", 0);
         map.put("Quarters", 0);
-        //your code here
+
+        if (cent >= 25) {
+            map.replace("Quarters", cent / 25);
+            cent = cent % 25;
+        }
+        if (cent >= 10) {
+            map.replace("Dimes", cent / 10);
+            cent = cent % 10;
+        }
+        if (cent >= 5) {
+            map.replace("Nickels", cent / 5);
+            cent = cent % 5;
+        }
+        if (cent >= 1) {
+            map.replace("Pennies", cent);
+            cent = 0;
+        }
         return map;
     }
 }
