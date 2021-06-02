@@ -6,5 +6,5 @@ package primus.pawel;
 class Exercise_144 {
 
 
-    a
+
 }
