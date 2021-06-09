@@ -21,14 +21,14 @@ class Exercise_152 {
         } else if (firstReelItem.equals(secondReelItem) && firstReelItem.equals(thirdReelItem)) {
             return itemsValue.get(firstReelItem) * 10;
         } else {
-            if(firstReelItem.equals(secondReelItem)) {
-                return thirdReelItem.equals("Wild") ? itemsValue.get(firstReelItem)*2 :  itemsValue.get(firstReelItem);
+            if (firstReelItem.equals(secondReelItem)) {
+                return thirdReelItem.equals("Wild") ? itemsValue.get(firstReelItem) * 2 : itemsValue.get(firstReelItem);
             }
-            if(firstReelItem.equals(thirdReelItem)) {
-                return secondReelItem.equals("Wild") ? itemsValue.get(firstReelItem)*2 :  itemsValue.get(firstReelItem);
+            if (firstReelItem.equals(thirdReelItem)) {
+                return secondReelItem.equals("Wild") ? itemsValue.get(firstReelItem) * 2 : itemsValue.get(firstReelItem);
             }
-            if(secondReelItem.equals(thirdReelItem)) {
-                return firstReelItem.equals("Wild") ? itemsValue.get(secondReelItem)*2 :  itemsValue.get(secondReelItem);
+            if (secondReelItem.equals(thirdReelItem)) {
+                return firstReelItem.equals("Wild") ? itemsValue.get(secondReelItem) * 2 : itemsValue.get(secondReelItem);
             }
         }
 
