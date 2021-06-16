@@ -1,4 +1,5 @@
 package primus.pawel;
+
 // Missing Alphabet
 // 6kyu
 // https://www.codewars.com/kata/5ad1e412cc2be1dbfb000016
