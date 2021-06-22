@@ -7,7 +7,7 @@ import java.util.Map;
 // 6kyu
 // https://www.codewars.com/kata/5c2b4182ac111c05cf388858/train/java
 // 2021-06-17 T:21:04:21
-class Exercise_160_todo {
+class Exercise_160 {
 
     public static String solve(String time) {
 
