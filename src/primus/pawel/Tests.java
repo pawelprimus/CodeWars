@@ -67,5 +67,13 @@ public class Tests {
 
     }
 
+    @Test void Exercise_164(){
 
-}
+            assertEquals("10 + 2", Exercise_164.expandedForm(12));
+            assertEquals("40 + 2", Exercise_164.expandedForm(42));
+            assertEquals("70000 + 300 + 4", Exercise_164.expandedForm(70304));
+        }
+
+    }
+
+
