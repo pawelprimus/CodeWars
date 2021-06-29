@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class Tests {
 
-    @Test
+/*    @Test
     public void Exercise21() {
         assertEquals(")()())()(()()(",
                 Exercise_021.encode("Prespecialized"));
@@ -72,7 +72,9 @@ public class Tests {
             assertEquals("10 + 2", Exercise_164.expandedForm(12));
             assertEquals("40 + 2", Exercise_164.expandedForm(42));
             assertEquals("70000 + 300 + 4", Exercise_164.expandedForm(70304));
-        }
+        }*/
+
+
 
     }
 
