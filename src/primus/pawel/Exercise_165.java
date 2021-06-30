@@ -14,7 +14,7 @@ class Exercise_165 {
                 upperCases++;
             } else {
                 lowerCases++;
-            }  
+            }
         }
         return (lowerCases >= upperCases) ? str.toLowerCase() : str.toUpperCase();
     }
