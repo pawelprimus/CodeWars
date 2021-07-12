@@ -3,7 +3,7 @@ package primus.pawel;
 // 5kyu
 // https://www.codewars.com/kata/536a155256eb459b8700077e
 // 2021-07-11 T:18:19:02
-class Exercise_176 {
+class Exercise_176_todo {
 
     public static int[][] createSpiral(int N) {
         int[][] spirale = new int[N][N];
@@ -14,7 +14,7 @@ class Exercise_176 {
 
         while (currentValue <= N*N){
 
-            
+
 
 
         }

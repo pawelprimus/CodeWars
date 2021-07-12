@@ -2,7 +2,7 @@ package primus.pawel;
 
 import java.util.HashMap;
 
-// HTML dynamic color string generation
+//
 // 6 kyu
 // https://www.codewars.com/kata/54a2e93b22d236498400134b/train/java
 // 2021-07-08 T:19:27:11
