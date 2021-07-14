@@ -11,8 +11,10 @@ class Exercise_178 {
 
     public static boolean isVowel(String s) {
 
-        Pattern p = Pattern.compile("[aeiou]");
+        Pattern p = Pattern.compile("ab");
         Matcher m = p.matcher(s.toLowerCase());
+
+        System.out.println("Group count: " + m.results().count());
 
         if (s.length() == 1) {
             return m.matches();
@@ -22,7 +24,12 @@ class Exercise_178 {
     }
 
     public static void main(String[] args) {
-        System.out.println(isVowel("o"));
+        System.out.println(isVowel("abdeasadlolab"));
     }
 
 }
+
+/*public static boolean isVowel(String s) {
+    return s.matches("[aeiouAEIOU]");
+  }
+  */
