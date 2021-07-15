@@ -14,3 +14,5 @@ class Exercise_179 {
     }
 
 }
+
+/*\p{L} matches anything that is a Unicode letter if you're interested in alphabets beyond the Latin one*/
