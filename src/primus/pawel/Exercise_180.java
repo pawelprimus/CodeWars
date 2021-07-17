@@ -12,7 +12,6 @@ class Exercise_180 {
         Pattern upperCases = Pattern.compile("[A-Z]");
         Pattern lowerCases = Pattern.compile("[a-z]");
         Pattern numbers = Pattern.compile("[0-9]");
-        Pattern specialCharacters = Pattern.compile("ab");
 
         int numberOfUpperCases = (int)upperCases.matcher(word).results().count();
         int numberOfLowerCases = (int)lowerCases.matcher(word).results().count();
