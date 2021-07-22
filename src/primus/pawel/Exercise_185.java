@@ -20,3 +20,8 @@ class Exercise_185 {
         return s.matches("[aeiouAEIOU]");
     }
 }
+
+/* public static String disemvowel(String str) {
+      return str.replaceAll("[aAeEiIoOuU]", "");
+  }
+  */
