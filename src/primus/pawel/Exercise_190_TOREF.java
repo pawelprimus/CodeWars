@@ -7,7 +7,7 @@ import java.util.Map;
 // 6kyu
 // https://www.codewars.com/kata/60a54750138eac0031eb98e1/train/java
 // 2021-07-28 T:20:51:30
-class Exercise_190 {
+class Exercise_190_TOREF {
 
     public static boolean checkVin(String vin) {
         // First Validation
