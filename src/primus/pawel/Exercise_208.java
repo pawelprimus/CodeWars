@@ -11,7 +11,7 @@ class Exercise_208 {
         if (arr.length == mixedArr.length) {
             return 0;
         }
-        
+
         int sumArr = 0;
         int sumMixedArr = 0;
 
@@ -24,3 +24,7 @@ class Exercise_208 {
     }
 
 }
+
+/*    int num1 = IntStream.of(arr).sum();
+        int num2 = IntStream.of(mixedArr).sum();
+        return num1-num2; */
