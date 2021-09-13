@@ -27,6 +27,6 @@ class Exercise_219 {
     }
     public static void main(String[] args) {
         System.out.println(   strongestEven(3, 10));
-        System.out.println(powerOfNumber(8));
+
     }
 }
