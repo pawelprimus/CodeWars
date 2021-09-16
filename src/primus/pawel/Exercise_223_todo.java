@@ -2,9 +2,9 @@ package primus.pawel;
 
 //
 //
+// https://www.codewars.com/kata/57c7231c484cf9e6ac000090/train/java
 //
-//
-class Exercise_223 {
+class Exercise_223_todo {
 
     public static int[] addingShifted(int[][] arrayOfArrays, int shift) {
         int fullLength = arrayOfArrays[0].length + shift;
