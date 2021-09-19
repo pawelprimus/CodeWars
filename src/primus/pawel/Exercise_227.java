@@ -2,11 +2,12 @@ package primus.pawel;
 
 import java.time.YearMonth;
 
-//
-//
-//
-//
-class Exercise_227_todo {
+// extended weekends
+// 7kyu
+// https://www.codewars.com/kata/5be7f613f59e0355ee00000f
+// 2021-09-19 T:15:49:41
+
+class Exercise_227 {
 
     public static String[] solve(int a, int b) {
 
