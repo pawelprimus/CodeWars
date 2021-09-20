@@ -4,7 +4,7 @@ package primus.pawel;
 // 7kyu
 // https://www.codewars.com/kata/57c7231c484cf9e6ac000090/train/java
 // 2021-09-19 T:15:56:45
-class Exercise_223_todo {
+class Exercise_223 {
 
     public static int[] addingShifted(int[][] arrayOfArrays, int shift) {
         int arraysAmount = arrayOfArrays.length;
@@ -14,7 +14,7 @@ class Exercise_223_todo {
 
         for (int i = 0; i < arraysAmount; i++) {
             for (int j = 0; j < oneArrayLength; j++) {
-                resultArray[j + i*shift] =+  arrayOfArrays[i][j];
+                resultArray[j + i*shift] +=  arrayOfArrays[i][j];
             }
         }
         return resultArray;
@@ -24,7 +24,14 @@ class Exercise_223_todo {
     public static void main(String[] args) {
 
         int[][] arrayOfArrays = new int[][]{new int[]{1, 2, 3, 4, 5, 6}, new int[]{7, 7, 7, -7, 7, 7}, new int[]{1, 1, 1, 1, 1, 1}};
-        System.out.println(addingShifted(arrayOfArrays, 3));
+        addingShifted(arrayOfArrays, 3);
+
+        int[] arr = addingShifted(arrayOfArrays, 3);
+
+        for (int i = 0; i < arr.length; i++) {
+
+            System.out.println(arr[i]);
+        }
 
 
     }
