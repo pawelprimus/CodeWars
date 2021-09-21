@@ -51,7 +51,7 @@ class Exercise_230_todo {
                     } else if (!Character.isDigit(currentChar) && !Character.isDigit(lastChar) && isContainSameFirstChar(currentValue, lastValue)) {
                         result.append(" ");
                     }
- 
+
                 }
             }
 
