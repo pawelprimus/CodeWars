@@ -1,6 +1,7 @@
 package primus.pawel;
 
 import java.sql.Timestamp;
+import java.util.Arrays;
 
 public class Main {
 
@@ -17,6 +18,7 @@ public class Main {
         System.out.println(A << 64);*/
         Timestamp ts = new Timestamp(1632256605);
         System.out.println(ts.toLocalDateTime());
+
 
     }
 }

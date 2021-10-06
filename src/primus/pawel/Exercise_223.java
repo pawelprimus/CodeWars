@@ -1,5 +1,7 @@
 package primus.pawel;
 
+import java.util.Arrays;
+
 // Adding values of arrays in a shifted way
 // 7kyu
 // https://www.codewars.com/kata/57c7231c484cf9e6ac000090/train/java
@@ -17,6 +19,8 @@ class Exercise_223 {
                 resultArray[j + i*shift] +=  arrayOfArrays[i][j];
             }
         }
+
+
         return resultArray;
     }
 
