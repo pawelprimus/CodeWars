@@ -7,20 +7,19 @@ package primus.pawel;
 class Exercise_249 {
 
     public static long[] seven(long m) {
-
+        System.out.println(m);
         String number = String.valueOf(m);
-
+        long counter = 0;
         while (number.length() > 2) {
-
-            //number = String.valueOf(Integer.valueOf(number.substring(0, number.length() - 2)) - Integer.valueOf(number.charAt(number.length() - 1)) * 2);
-            System.out.println(Integer.valueOf(number.substring(0, number.length() - 1)));
-            System.out.println(Integer.valueOf(number.substring(number.length() - 1)));
             number = String.valueOf(Integer.valueOf(number.substring(0, number.length() - 1)) - Integer.valueOf(number.substring(number.length() - 1))*2);
+            counter++;
+           
         }
 
-        System.out.println(number);
-        //System.out.println(number);
-        return Integer.valueOf(number);
+        long[] result = new long[2];
+        result[0] = Integer.parseInt(number);
+        result[1] = counter;
+        return result;
     }
 
     public static void main(String[] args) {
