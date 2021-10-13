@@ -13,7 +13,7 @@ class Exercise_249 {
         while (number.length() > 2) {
             number = String.valueOf(Integer.valueOf(number.substring(0, number.length() - 1)) - Integer.valueOf(number.substring(number.length() - 1))*2);
             counter++;
-           
+
         }
 
         long[] result = new long[2];
