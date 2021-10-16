@@ -12,7 +12,7 @@ class Exercise_252 {
         long number = 0;
         long sum = 0;
         while (stringNumber.length() > 2) {
-            for (int i = 0; i < stringNumber.length(); i++) {
+            for (int i = 0; i <  stringNumber.length(); i++) {
                 number = Long.parseLong(String.valueOf(stringNumber.charAt(i)));
                 sum += number * dividors[i % 6];
             }
