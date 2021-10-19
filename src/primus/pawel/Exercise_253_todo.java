@@ -6,7 +6,7 @@ import java.util.*;
 // 6kyu
 // https://www.codewars.com/kata/5e8dd197c122f6001a8637ca/train/java
 // 2021-10-17 T:01:00:13
-class Exercise_253 {
+class Exercise_253_todo {
 
     public static Map<Integer, List<String>> removeDuplicateIds(Map<Integer, List<String>> obj) {
 
