@@ -4,7 +4,7 @@ package primus.pawel;
 // 7kyu
 // https://www.codewars.com/kata/5841f680c5c9b092950001ae/train/java
 // 2021-10-28 T:22:15:46
-class Exercise_264_todo {
+class Exercise_264 {
     public static int[] generateIntegers(final int m, final int n) {
         int[] resultTab = new int[n - m + 1];
         int index = 0;
@@ -15,3 +15,8 @@ class Exercise_264_todo {
         return resultTab;
     }
 }
+
+/*public static int[] flattenAndSort(int[][] array) {
+    return Arrays.stream(array).flatMapToInt(Arrays::stream).sorted().toArray();
+  }
+  */
