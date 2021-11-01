@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-class Exercise_267_todo {
+class Exercise_267 {
 
     private static final String FURY = "FURY";
     private static final String FIRE = "FIRE";
