@@ -4,7 +4,7 @@ package primus.pawel;
 // 7kyu
 // https://www.codewars.com/kata/57a62154cf1fa5b25200031e/train/java
 // 2021-11-10 T:00:21:31
-class Exercise_278_todo {
+class Exercise_278 {
 
     static String alternateCase(final String string) {
         StringBuilder stringBuilder = new StringBuilder();
