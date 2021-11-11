@@ -39,22 +39,22 @@ public class Dinglemouse {
         return this;
     }
 
-    public String hello() {
+        public String hello() {
 
-        String sb = "Hello.";
-        for (String word : map) {
-            sb += (word);
+            String sb = "Hello.";
+            for (String word : map) {
+                sb += (word);
+            }
+            if (map.contains(" My name is [NAME].")) {
+                sb = sb.replace("[NAME]", this.name);
+            }
+            if (map.contains(" I am [AGE].")) {
+                sb = sb.replace("[AGE]", String.valueOf(this.age));
+            }
+            if (map.contains(" I am [SEX].")) {
+                sb = sb.replace("[SEX]", sex == 'M' ? "male" : "female");
+            }
+            return sb;
         }
-        if (map.contains(" My name is [NAME].")) {
-            sb = sb.replace("[NAME]", this.name);
-        }
-        if (map.contains(" I am [AGE].")) {
-            sb = sb.replace("[AGE]", String.valueOf(this.age));
-        }
-        if (map.contains(" I am [SEX].")) {
-            sb = sb.replace("[SEX]", sex == 'M' ? "male" : "female");
-        }
-        return sb;
-    }
 
 }
