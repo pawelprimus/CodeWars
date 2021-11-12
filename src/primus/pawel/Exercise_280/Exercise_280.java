@@ -1,7 +1,7 @@
 package primus.pawel.Exercise_280;
-//
-//
-//
+// FIXME: Hello
+// 6kyu
+// https://www.codewars.com/kata/5b0a80ce84a30f4762000069
 //
 class Exercise_280 {
 
