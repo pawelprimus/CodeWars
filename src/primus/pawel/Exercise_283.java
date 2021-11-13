@@ -6,7 +6,7 @@ import java.util.Arrays;
 // 7kyu
 // https://www.codewars.com/kata/5a63948acadebff56f000018/train/java
 // 2021-11-13 T:13:08:54
-class Exercise_283_todo {
+class Exercise_283 {
 
     public static long maxProduct(int[] numbers, int sub_size) {
         long sum = 1;
