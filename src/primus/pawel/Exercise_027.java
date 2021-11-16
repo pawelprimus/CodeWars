@@ -1,6 +1,6 @@
 package primus.pawel;
 // Sum of positive
-// 8 kyu
+// 8kyu
 // https://www.codewars.com/kata/5715eaedb436cf5606000381/train/java
 // 2021-03-20 T:12:02:16
 

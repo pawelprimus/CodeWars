@@ -1,7 +1,7 @@
 package primus.pawel;
 
 // Credit card issuer checking
-// 2021-08-02 T:23:18:33
+// 7kyu
 // https://www.codewars.com/kata/5701e43f86306a615c001868/train/java
 // 2021-08-02 T:23:18:38
 class Exercise_194 {

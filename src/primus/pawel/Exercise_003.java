@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 // Next bigger number with the same digits
-// 4 kyu
+// 4kyu
 //https://www.codewars.com/kata/55983863da40caa2c900004e/train/java
 // 2021-04-29 T:21:44:25
 // out of time :(

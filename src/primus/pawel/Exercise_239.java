@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-//
-//
+// Basic Compression
+// 6kyu
 // https://www.codewars.com/kata/5914e068f05d9a011e000054/train/java
 // 2021-09-30 T:21:53:25
 class Exercise_239 {

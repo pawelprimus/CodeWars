@@ -1,7 +1,7 @@
 package primus.pawel;
-//
-//
-//
+// Backwards Read Primes
+// 6kyu
+// https://www.codewars.com/kata/5539fecef69c483c5a000015/train/java
 //
 
 class Exercise_093 {

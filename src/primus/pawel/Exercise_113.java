@@ -1,7 +1,7 @@
 package primus.pawel;
 
 // How much?
-// 6 kyu
+// 6kyu
 // https://www.codewars.com/kata/55b4d87a3766d9873a0000d4/train/java
 // 2021-05-08 T:15:23:54
 class Exercise_113 {

@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 // Interactive Dictionary
-// 7 kyu
+// 7kyu
 // https://www.codewars.com/kata/57a93f93bb9944516d0000c1/train/java
 // 2021-04-16 T:17:55:28
 class Exercise_080 {

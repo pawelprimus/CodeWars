@@ -1,7 +1,7 @@
 package primus.pawel;
 
 // Most digits
-// 7 kyu
+// 7kyu
 // https://www.codewars.com/kata/58daa7617332e59593000006/train/java
 // 2021-04-23 T:01:37:16
 class Exercise_094 {

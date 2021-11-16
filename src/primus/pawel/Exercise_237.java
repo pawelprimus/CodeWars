@@ -1,7 +1,7 @@
 package primus.pawel;
 
-//
-//
+// Without the letter 'E'
+// 7kyu
 // https://www.codewars.com/kata/594b8e182fa0a0d7fc000875/train/java
 // 2021-09-27 T:23:14:34
 class Exercise_237 {

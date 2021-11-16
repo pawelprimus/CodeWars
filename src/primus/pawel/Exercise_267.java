@@ -3,7 +3,10 @@ package primus.pawel;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
+// FIRE and FURY
+// 6kyu
+// https://www.codewars.com/kata/59922ce23bfe2c10d7000057
+//
 class Exercise_267 {
 
     private static final String FURY = "FURY";

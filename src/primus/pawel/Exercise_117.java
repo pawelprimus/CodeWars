@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 // Array diff
-// 6 kyu
+// 6kyu
 // https://www.codewars.com/kata/523f5d21c841566fde000009/train/java
 // 2021-05-10 T:18:13:01
 class Exercise_117 {

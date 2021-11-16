@@ -1,8 +1,8 @@
 package primus.pawel;
 
-//
-//
-//
+// Detect Pangram
+// 6kyu
+// https://www.codewars.com/kata/545cedaa9943f7fe7b000048/train/java
 // 2021-04-02 T:23:03:38
 class Exercise_054 {
     public static boolean check(String sentence) {

@@ -1,8 +1,9 @@
+package primus.pawel;
+
 // Don't give me five!
 // 7kyu
 // https://www.codewars.com/kata/5813d19765d81c592200001a/train/java
 // 2021-04-13 T:20:00:41
-package primus.pawel;
 
 class Exercise_075 {
     public static int dontGiveMeFive(int start, int end) {

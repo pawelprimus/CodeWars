@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 // Count the smiley faces!
-// 6 kyu
+// 6kyu
 // https://www.codewars.com/kata/583203e6eb35d7980400002a/train/java
 // 2021-05-07 T:21:25:01
 class Exercise_112 {

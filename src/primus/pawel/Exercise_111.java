@@ -3,7 +3,7 @@ package primus.pawel;
 import java.util.Arrays;
 
 // Alphabet symetry
-// 7 kyu
+// 7kyu
 // https://www.codewars.com/kata/59d9ff9f7905dfeed50000b0/train/java
 // 2021-05-07 T:21:07:19
 class Exercise_111 {

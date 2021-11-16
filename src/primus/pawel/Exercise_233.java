@@ -1,8 +1,8 @@
 package primus.pawel;
 
-//
-//
-//
+// Disagreeable ascii
+// 7kyu
+// https://www.codewars.com/kata/582cb3a637c5583f2200005d/train/java
 // 2021-09-23 T:23:49:34
 class Exercise_233 {
 

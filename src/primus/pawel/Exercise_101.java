@@ -3,7 +3,7 @@ package primus.pawel;
 import java.util.HashMap;
 
 // Alphabet war
-// 7 kyu
+// 7kyu
 // https://www.codewars.com/kata/59377c53e66267c8f6000027
 // 2021-04-30 T:15:58:08
 class Exercise_101 {

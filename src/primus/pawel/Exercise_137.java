@@ -1,6 +1,6 @@
 package primus.pawel;
 
-//
+// shorter concat [reverse longer]
 // 7 kyu
 // https://www.codewars.com/kata/54557d61126a00423b000a45/train/java
 // 2021-05-26 T:20:53:29

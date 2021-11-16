@@ -1,6 +1,6 @@
 package primus.pawel;
 // Prize Draw
-// 6 kyu
+// 6kyu
 // https://www.codewars.com/kata/5616868c81a0f281e500005c/train/java
 // 2021-03-28 T:21:42:24
 

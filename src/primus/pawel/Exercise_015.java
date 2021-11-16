@@ -1,7 +1,7 @@
 package primus.pawel;
 
 // Find The Parity Outlier
-// 6 kyu
+// 6kyu
 // https://www.codewars.com/kata/5526fc09a1bbd946250002dc/train/java
 //
 class Exercise_015 {

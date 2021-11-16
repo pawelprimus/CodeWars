@@ -1,6 +1,6 @@
 package primus.pawel;
 // Get the Middle Character
-// kyu 7
+// 7kyu
 // https://www.codewars.com/kata/56747fd5cb988479af000028/train/java
 // 2021-03-19 T:21:29:52
 

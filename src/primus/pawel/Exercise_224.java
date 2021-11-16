@@ -1,7 +1,7 @@
 package primus.pawel;
 
-//
-//
+// Red Knight
+// 7kyu
 // https://www.codewars.com/kata/5fc4349ddb878a0017838d0f/train/java
 // 2021-09-14 T:23:42:57
 class Exercise_224 {

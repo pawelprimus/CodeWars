@@ -2,8 +2,8 @@ package primus.pawel;
 
 import java.util.HashMap;
 
-//
-// 6 kyu
+// Multi-tap Keypad Text Entry on an Old Mobile Phone
+// 6kyu
 // https://www.codewars.com/kata/54a2e93b22d236498400134b/train/java
 // 2021-07-08 T:19:27:11
 class Exercise_173 {

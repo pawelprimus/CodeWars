@@ -3,7 +3,7 @@ package primus.pawel;
 import java.util.LinkedList;
 
 // Message validator
-// 6 kyu
+// 6kyu
 // https://www.codewars.com/kata/5fc7d2d2682ff3000e1a3fbc/train/java
 // 2021-05-02 T:20:44:23
 class Exercise_105_todo {
