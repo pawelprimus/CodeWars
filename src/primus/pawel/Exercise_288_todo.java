@@ -3,7 +3,5 @@ package primus.pawel;
 //
 //
 //
-class Exercise_274 {
-
-
+class Exercise_288_todo {
 }

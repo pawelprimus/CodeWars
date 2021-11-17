@@ -1,11 +1,7 @@
 package primus.pawel;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
 
@@ -25,21 +21,64 @@ public class Main {
         String classPath = "src\\primus\\pawel\\";
 
         ArrayList<String> allFileNames = getAllFileNames(classPath);
-        ArrayList<String> doneKata = getAllFileNames(classPath);
-
         ArrayList<Kata> allKatas = new ArrayList<>();
+        int done = 0;
+        int todo = 0;
 
-        for(String className : allFileNames){
+        int[] kyulevels = new int[8];
+
+        for (String className : allFileNames) {
             allKatas.add(readClass(className));
         }
 
-        for(Kata kata : allKatas){
+        StringBuilder header = new StringBuilder();
+        StringBuilder stats = new StringBuilder();
+        StringBuilder exercises = new StringBuilder();
+
+        header.append("![](https://www.codewars.com/users/%3Cprim%3Erim%3C%2Fprim%3E/badges/large)").append("\n");
+
+        for (Kata kata : allKatas) {
             System.out.println(kata.toFile());
+            exercises.append(kata.toFile()).append("\n");
+            if (kata.getStatus().equals(Kata.Status.DONE)) {
+                done++;
+                kyulevels[kata.getKyuNumber() - 1]++;
+            } else {
+                todo++;
+            }
+        }
+
+        stats.append("DONE: " + done).append("\n");
+
+        stats.append(getKyuStats(kyulevels));
+
+        stats.append("TODO: " + todo).append("\n\n");
+        System.out.println("DONE: " + done);
+        System.out.println("TODO: " + todo);
+
+
+        System.out.println(allKatas.size());
+        System.out.println(allFileNames.size());
+
+        try (PrintWriter out = new PrintWriter("README.md")) {
+            out.println(header);
+            out.println(stats);
+            out.println(exercises);
         }
 
 
+    }
 
+    public static String getKyuStats(int[] kyulevels){
+        StringBuilder kyuStats = new StringBuilder();
+        for (int i = 0; i < kyulevels.length; i++) {
+            if(kyulevels[i]>0){
+                kyuStats.append(i+1).append("KYU: ").append(kyulevels[i]).append("\n");
+            }
+        }
 
+        System.out.println(kyuStats.toString());
+        return kyuStats.toString();
     }
 
     public static ArrayList<String> getAllFileNames(String path) {
@@ -48,8 +87,8 @@ public class Main {
         File[] files = new File(path).listFiles();
         for (File file : files) {
             if (file.isFile()) {
-                if(file.toString().contains("Exercise")){
-                    if(file.toString().contains("todo") || file.toString().contains("TODO")){
+                if (file.toString().contains("Exercise")) {
+                    if (file.toString().contains("todo") || file.toString().contains("TODO")) {
 
                     }
                     results.add(file.getName());
@@ -79,10 +118,10 @@ public class Main {
                 sb.append(System.lineSeparator());
                 line = br.readLine();
 
-                if(line != null){
-                    if(slashCounter<4){
+                if (line != null) {
+                    if (slashCounter < 4) {
 
-                        if(line.contains("//")){
+                        if (line.contains("//")) {
                             kataArr.add(line.replace("//", "").trim());
                             slashCounter++;
                             System.out.println(line);
@@ -98,13 +137,13 @@ public class Main {
             br.close();
         }
 
-        kata.setNumber(file.replaceAll("[^0-9]",""));
+        kata.setNumber(file.replaceAll("[^0-9]", ""));
         kata.setName(kataArr.get(0));
         kata.setKyu(kataArr.get(1));
         kata.setLink(kataArr.get(2));
         kata.setDate(kataArr.get(3));
 
-        if(file.contains("todo") || file.contains("TODO")){
+        if (file.contains("todo") || file.contains("TODO")) {
             kata.setStatus(Kata.Status.TODO);
         } else {
             kata.setStatus(Kata.Status.DONE);

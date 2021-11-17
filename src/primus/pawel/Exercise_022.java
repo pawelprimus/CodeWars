@@ -1,6 +1,6 @@
 package primus.pawel;
 // Decode the Morse code
-// 6 kyu
+// 6kyu
 // https://www.codewars.com/kata/54b724efac3d5402db00065e/train/java
 // 2021-03-18 T:18:11:26
 

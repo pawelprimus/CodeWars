@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 // Mexican Wave
-// 6 kyu
+// 6kyu
 // https://www.codewars.com/kata/58f5c63f1e26ecda7e000029/train/java
 // 2021-04-12 T:19:55:10
 class Exercise_069 {

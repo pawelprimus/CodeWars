@@ -62,9 +62,17 @@ public class Kata {
         DONE, TODO;
     }
 
+    public int getKyuNumber(){
+        int num = Integer.parseInt(kyu.replaceAll("[^0-9]", ""));
+        return num;
+    }
+
     public String toFile(){
         StringBuilder sb = new StringBuilder();
-        sb.append("[#").append(number).append(" [").append(kyu).append("] ").append(name).append("] ").append("(").append(link).append(")");
+        sb.append("[#").append(number).append(" [").append(kyu).append("] ").append(name).append("]").append("(").append(link).append(")");
+        if(status.equals(Status.TODO)){
+            sb.append("//TODO");
+        }
         return sb.toString();
     }
 
