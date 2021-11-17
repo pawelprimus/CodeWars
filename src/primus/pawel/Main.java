@@ -39,7 +39,7 @@ public class Main {
 
         for (Kata kata : allKatas) {
             System.out.println(kata.toFile());
-            exercises.append(kata.toFile()).append("\n");
+            exercises.append(kata.toFile()).append("\r");
             if (kata.getStatus().equals(Kata.Status.DONE)) {
                 done++;
                 kyulevels[kata.getKyuNumber() - 1]++;
@@ -48,11 +48,11 @@ public class Main {
             }
         }
 
-        stats.append("DONE: " + done).append("\n");
+        stats.append("DONE: " + done).append("\r");
 
         stats.append(getKyuStats(kyulevels));
 
-        stats.append("TODO: " + todo).append("\n\n");
+        stats.append("TODO: " + todo).append("\r\n");
         System.out.println("DONE: " + done);
         System.out.println("TODO: " + todo);
 
@@ -73,7 +73,7 @@ public class Main {
         StringBuilder kyuStats = new StringBuilder();
         for (int i = 0; i < kyulevels.length; i++) {
             if(kyulevels[i]>0){
-                kyuStats.append(i+1).append("KYU: ").append(kyulevels[i]).append("\n");
+                kyuStats.append(i+1).append("KYU: ").append(kyulevels[i]).append("\r");
             }
         }
 
