@@ -69,7 +69,7 @@ public class Kata {
 
     public String toFile(){
         StringBuilder sb = new StringBuilder();
-        sb.append("[#").append(number).append(" [").append(kyu).append("] ").append(name).append("]").append("(").append(link).append(")");
+        sb.append("[#").append(number).append(" [").append(kyu).append("] ").append(name).append("]").append("(").append(link.replaceAll("https:", "https://")).append(")");
         if(status.equals(Status.TODO)){
             sb.append("//TODO");
         }
