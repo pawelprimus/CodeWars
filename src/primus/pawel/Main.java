@@ -73,7 +73,7 @@ public class Main {
         StringBuilder kyuStats = new StringBuilder();
         for (int i = 0; i < kyulevels.length; i++) {
             if(kyulevels[i]>0){
-                kyuStats.append(" - ").append(i+1).append("KYU: ").append(kyulevels[i]).append(" <br /> ");
+                kyuStats.append(i+1).append("KYU: ").append(kyulevels[i]).append(" <br /> ");
             }
         }
 
