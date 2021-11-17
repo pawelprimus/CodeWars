@@ -5,8 +5,8 @@ import java.util.Collections;
 
 // LOTTO 6 aus 49 - 6 of 49
 // 6kyu
-// 2021-09-13 T:19:03:52
 // https://www.codewars.com/kata/57a98e8172292d977b000079/train/java
+// 2021-09-13 T:19:03:52
 class Exercise_222 {
 
     public static int[] numberGenerator() {

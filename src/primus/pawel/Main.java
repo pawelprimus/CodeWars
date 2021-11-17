@@ -35,11 +35,11 @@ public class Main {
         StringBuilder stats = new StringBuilder();
         StringBuilder exercises = new StringBuilder();
 
-        header.append("![](https://www.codewars.com/users/%3Cprim%3Erim%3C%2Fprim%3E/badges/large)").append("\n");
+        header.append("![](https://www.codewars.com/users/%3Cprim%3Erim%3C%2Fprim%3E/badges/large)").append("<br />");
 
         for (Kata kata : allKatas) {
             System.out.println(kata.toFile());
-            exercises.append(kata.toFile()).append("\r");
+            exercises.append(kata.toFile()).append("<br />");
             if (kata.getStatus().equals(Kata.Status.DONE)) {
                 done++;
                 kyulevels[kata.getKyuNumber() - 1]++;
@@ -48,11 +48,11 @@ public class Main {
             }
         }
 
-        stats.append("DONE: " + done).append("\r");
+        stats.append("DONE: " + done).append("<br />");
 
         stats.append(getKyuStats(kyulevels));
 
-        stats.append("TODO: " + todo).append("\r\n");
+        stats.append("TODO: " + todo).append("<br />");
         System.out.println("DONE: " + done);
         System.out.println("TODO: " + todo);
 
@@ -73,7 +73,7 @@ public class Main {
         StringBuilder kyuStats = new StringBuilder();
         for (int i = 0; i < kyulevels.length; i++) {
             if(kyulevels[i]>0){
-                kyuStats.append(i+1).append("KYU: ").append(kyulevels[i]).append("\r");
+                kyuStats.append(i+1).append("KYU: ").append(kyulevels[i]).append("<br />");
             }
         }
 
