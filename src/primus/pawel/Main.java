@@ -48,10 +48,10 @@ public class Main {
             }
         }
 
-        stats.append("DONE: " + done).append("<br />");
 
         stats.append(getKyuStats(kyulevels));
 
+        stats.append("<br />").append("DONE: " + done).append("<br />");
         stats.append("TODO: " + todo).append("<br />");
         System.out.println("DONE: " + done);
         System.out.println("TODO: " + todo);
@@ -73,7 +73,7 @@ public class Main {
         StringBuilder kyuStats = new StringBuilder();
         for (int i = 0; i < kyulevels.length; i++) {
             if(kyulevels[i]>0){
-                kyuStats.append(i+1).append("KYU: ").append(kyulevels[i]).append("<br />");
+                kyuStats.append("- ").append(i+1).append("KYU: ").append(kyulevels[i]).append("<br />");
             }
         }
 

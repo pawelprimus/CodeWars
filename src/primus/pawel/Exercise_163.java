@@ -2,8 +2,8 @@ package primus.pawel;
 
 // Pascal's Triangle #2
 // 6kyu
-// 2021-06-24 T:22:45:19
 // https://www.codewars.com/kata/52945ce49bb38560fe0001d9/train/java
+// 2021-06-24 T:22:45:19
 class Exercise_163 {
 
     public static int[][] pascal(int depth) {
@@ -58,3 +58,4 @@ class Exercise_163 {
         pascal(5);
     }
 }
+

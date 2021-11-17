@@ -4,8 +4,8 @@ import java.util.LinkedList;
 
 // What's in a name
 // 6kyu
-// 2021-06-24 T:22:21:40
 // https://www.codewars.com/kata/59daf400beec9780a9000045/train/java
+// 2021-06-24 T:22:21:40
 class Exercise_162 {
 
     public static boolean nameInStr(String str, String name) {
