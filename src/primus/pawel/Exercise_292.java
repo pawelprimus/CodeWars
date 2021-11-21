@@ -2,11 +2,10 @@ package primus.pawel;
 
 import java.util.Arrays;
 import java.util.List;
-
-//
-//
-//
-//
+// Circular List
+// 7kyu
+// https://www.codewars.com/kata/5b2e60742ae7543f9d00005d/train/java
+// 2021-11-21 T:17:17:14
 class Exercise_292 {
     public static void main(String[] args) {
         final CircularList<String> xs = new CircularList<>("one", "two", "three");
