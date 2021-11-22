@@ -6,7 +6,7 @@ import java.util.Arrays;
 // 6kyu
 // https://www.codewars.com/kata/5fc7d2d2682ff3000e1a3fbc/train/java
 // 2021-05-02 T:20:44:23
-class Exercise_105_todo {
+class Exercise_105 {
 
     public static boolean isAValidMessage( String message) {
 
