@@ -1,11 +1,7 @@
 package primus.pawel;
 
-import java.util.Arrays;
 import java.util.IntSummaryStatistics;
-import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 // Between Extremes
 // 7kyu
@@ -13,17 +9,24 @@ import java.util.stream.Stream;
 // 2021-11-23 T:20:32:03
 class Exercise_294 {
 
-    public static int betweenExtremes(int[] numbers)
-    {
+    public static int betweenExtremes(int[] numbers) {
         int max = IntStream.of(numbers).max().getAsInt();
         int min = IntStream.of(numbers).min().getAsInt();
 
-        return max-min;
+        return max - min;
     }
 
     public static void main(String[] args) {
 
-        betweenExtremes(new int[]{21, 34, 54, 43, 26, 12});
+        int[] arr = new int[]{21, 34, 54, 43, 26, 12};
+
+
+        IntSummaryStatistics stats = IntStream.of(arr).summaryStatistics();
+        System.out.println(stats.getMax());
+        System.out.println(stats.getMin());
+        System.out.println(stats.getCount());
+        System.out.println(stats.getAverage());
+
     }
 
 }
