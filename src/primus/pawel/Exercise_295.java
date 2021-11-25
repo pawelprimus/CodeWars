@@ -13,6 +13,8 @@ class Exercise_295 {
 
     public static void main(String[] args) {
         reverse_bits(417);
+
+
     }
 
 }
