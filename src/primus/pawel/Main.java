@@ -36,6 +36,7 @@ public class Main {
         StringBuilder exercises = new StringBuilder();
 
         header.append("![](https://www.codewars.com/users/%3Cprim%3Erim%3C%2Fprim%3E/badges/large)").append("<br />");
+        header.append("Exercised made in https://www.codewars.com(https://www.codewars.com)");
 
         for (Kata kata : allKatas) {
             System.out.println(kata.toFile());
