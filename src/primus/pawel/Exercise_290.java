@@ -3,7 +3,7 @@ package primus.pawel;
 // 7kyu
 // https://www.codewars.com/kata/5a1ee4dfffe75f0fcb000145/train/java
 // 2021-12-06 T:18:59:40
-class Exercise_290_todo {
+class Exercise_290 {
 
         private static int B_INDEX = 2;
         private static int I_INDEX = 9;
