@@ -20,6 +20,8 @@ public class Main {
         //String file = "src\\primus\\pawel\\Exercise_001.java";
         String classPath = "src\\primus\\pawel\\";
 
+
+
         ArrayList<String> allFileNames = getAllFileNames(classPath);
         ArrayList<Kata> allKatas = new ArrayList<>();
         int done = 0;
