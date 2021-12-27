@@ -3,7 +3,7 @@ package primus.pawel;
 // 7kyu
 // https://www.codewars.com/kata/5a9e86705ee396d6be000091/train/java
 // 2021-11-29 T:20:02:03
-class Exercise_288_todo {
+class Exercise_288 {
 
     public boolean checkThreeAndTwo(char[] chars) {
         int[] numbers = new int[26];
