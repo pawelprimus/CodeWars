@@ -36,17 +36,17 @@ class Exercise_321 {
 
         int firstPart = Integer.parseInt(ohmColorsMap.get(transistorColors[0]) + ohmColorsMap.get(transistorColors[1]));
         double secondPart = Math.pow(10, Integer.parseInt(ohmColorsMap.get(transistorColors[2])));
-1        String bandOhms = String.valueOf((int) (firstPart * secondPart));
+         String bandOhms = String.valueOf((int) (firstPart * secondPart));
 
 
         String firstOhmPart = "";
         String secondOhmPart = "";
 
         if (bandOhms.length() >= 4 && bandOhms.length() < 7) {
-            firstOhmPart = bandOhms.substring(0 , bandOhms.length() - 3);
+            firstOhmPart = bandOhms.substring(0, bandOhms.length() - 3);
             secondOhmPart = bandOhms.substring(bandOhms.length() - 3);
 
-            if(secondOhmPart.charAt(0) != '0'){
+            if (secondOhmPart.charAt(0) != '0') {
                 secondOhmPart = "." + secondOhmPart.charAt(0) + "k";
                 bandOhms = firstOhmPart + secondOhmPart;
             } else {
@@ -55,10 +55,10 @@ class Exercise_321 {
 
         } else if (bandOhms.length() >= 7) {
 
-            firstOhmPart = bandOhms.substring(0 , bandOhms.length() - 6);
+            firstOhmPart = bandOhms.substring(0, bandOhms.length() - 6);
             secondOhmPart = bandOhms.substring(bandOhms.length() - 6);
 
-            if(secondOhmPart.charAt(0) != '0'){
+            if (secondOhmPart.charAt(0) != '0') {
                 secondOhmPart = "." + secondOhmPart.charAt(0) + "M";
                 bandOhms = firstOhmPart + secondOhmPart;
             } else {
