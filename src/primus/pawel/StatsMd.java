@@ -22,7 +22,7 @@ public class StatsMd {
         for (Kata kata : katasLists) {
             System.out.println(kata.toFile());
 
-            stats.append(kata.toFile());
+            exercises.append(kata.toFile()).append(BR_END);
             if (kata.getStatus().equals(Kata.Status.DONE)) {
                 done++;
                 kyulevels[kata.getKyuNumber() - 1]++;
