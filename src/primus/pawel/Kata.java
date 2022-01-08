@@ -67,9 +67,11 @@ public class Kata {
         return num;
     }
 
+    private static final String FILE_TEXT = "[#%s [%s] %s](%s)";
+
     public String toFile(){
         StringBuilder sb = new StringBuilder();
-        sb.append("[#").append(number).append(" [").append(kyu).append("] ").append(name).append("]").append("(").append(link.replaceAll("https:", "https://")).append(")");
+        sb.append(String.format(FILE_TEXT, number, kyu, name, link.replaceAll("https:", "https://")));
         if(status.equals(Status.TODO)){
             sb.append("//TODO");
         }

@@ -5,24 +5,14 @@ import java.util.ArrayList;
 
 public class Main {
 
+    private static String CLASS_PATH = "src\\primus\\pawel\\";
+
+
     public static void main(String[] args) throws IOException {
-        // write your code here
-     /*   int bitmask = 32;
-        int val = 1;
-        char a = 'a';
-        char A = 'A';
-        // prints "2"
-        System.out.println("Bitmask " + Integer.toBinaryString(bitmask));
-        System.out.println( "val " +Integer.toBinaryString(val));
-        System.out.println( "char a " +Integer.toBinaryString((a)));
-        System.out.println(A << 64);*/
 
-        //String file = "src\\primus\\pawel\\Exercise_001.java";
-        String classPath = "src\\primus\\pawel\\";
+        StatsMd statsMd = new StatsMd();
 
-
-
-        ArrayList<String> allFileNames = getAllFileNames(classPath);
+        ArrayList<String> allFileNames = getAllFileNames(CLASS_PATH);
         ArrayList<Kata> allKatas = new ArrayList<>();
         int done = 0;
         int todo = 0;
@@ -37,11 +27,12 @@ public class Main {
         StringBuilder stats = new StringBuilder();
         StringBuilder exercises = new StringBuilder();
 
-        header.append("![](https://www.codewars.com/users/%3Cprim%3Erim%3C%2Fprim%3E/badges/large)").append("<br />");
-        header.append("Exercises made in https://www.codewars.com");
+        //header.append("![](https://www.codewars.com/users/%3Cprim%3Erim%3C%2Fprim%3E/badges/large)").append("<br />");
+        //header.append("Exercises made in https://www.codewars.com");
 
         for (Kata kata : allKatas) {
             System.out.println(kata.toFile());
+            statsMd.addExercise(kata.toFile());
             exercises.append(kata.toFile()).append("<br />");
             if (kata.getStatus().equals(Kata.Status.DONE)) {
                 done++;
@@ -51,10 +42,12 @@ public class Main {
             }
         }
 
-
+        statsMd.addTextToStats(getKyuStats(kyulevels));
         stats.append(getKyuStats(kyulevels));
 
+        statsMd.addTextToStats(("<br />") + ("<br />") + ("DONE: " + done) + ("<br />"));
         stats.append("<br />").append("<br />").append("DONE: " + done).append("<br />");
+        statsMd.addTextToStats("TODO: " + todo + "<br />");
         stats.append("TODO: " + todo).append("<br />");
         System.out.println("DONE: " + done);
         System.out.println("TODO: " + todo);
@@ -64,19 +57,19 @@ public class Main {
         System.out.println(allFileNames.size());
 
         try (PrintWriter out = new PrintWriter("README.md")) {
-            out.println(header);
-            out.println(stats);
-            out.println(exercises);
+            out.println(statsMd.getHeader());
+            out.println(statsMd.getStats());
+            out.println(statsMd.getExercises());
         }
 
 
     }
 
-    public static String getKyuStats(int[] kyulevels){
+    public static String getKyuStats(int[] kyulevels) {
         StringBuilder kyuStats = new StringBuilder();
         for (int i = 0; i < kyulevels.length; i++) {
-            if(kyulevels[i]>0){
-                kyuStats.append(" - ").append(i+1).append("KYU: ").append(kyulevels[i]).append("\n");
+            if (kyulevels[i] > 0) {
+                kyuStats.append(" - ").append(i + 1).append("KYU: ").append(kyulevels[i]).append("\n");
             }
         }
 
@@ -105,13 +98,12 @@ public class Main {
     public static Kata readClass(String file) throws IOException {
 
         StringBuilder result = new StringBuilder();
-        String classPath = "src\\primus\\pawel\\";
         Kata kata = new Kata();
         System.out.println(file);
         int slashCounter = 0;
         ArrayList<String> kataArr = new ArrayList<>();
 
-        BufferedReader br = new BufferedReader(new FileReader(classPath + "\\" + file));
+        BufferedReader br = new BufferedReader(new FileReader(CLASS_PATH + "\\" + file));
         try {
             StringBuilder sb = new StringBuilder();
             String line = br.readLine();
