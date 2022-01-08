@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class StatsMd {
     private static final String BR_END = "<br />";
-    private static final String MY_CW_WEBSTIE = "{https://www.codewars.com/users/%3Cprim%3Erim%3C%2Fprim%3E/badges/large}";
+    private static final String MY_CW_WEBSTIE = "(https://www.codewars.com/users/%3Cprim%3Erim%3C%2Fprim%3E/badges/large)";
 
     private static final String HEADER_FIRST_TEXT = "![]" + MY_CW_WEBSTIE + BR_END;
     private static final String HEADER_SECOND_TEXT = "Exercises made in https://www.codewars.com";
