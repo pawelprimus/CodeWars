@@ -3,7 +3,8 @@ package primus.pawel;
 // 7kyu
 // https://www.codewars.com/kata/54fb963d3fe32351f2000102/train/java
 // 2022-01-06 T:00:16:14
-class Exericse_327 {
+
+class Exercise_327 {
 
     public static long conjecture(long x) {
         int result = 1;
