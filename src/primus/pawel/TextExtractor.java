@@ -28,9 +28,6 @@ class TextExtractor {
         for (File file : files) {
             if (file.isFile()) {
                 if (file.toString().contains("Exercise")) {
-                    if (file.toString().contains("todo") || file.toString().contains("TODO")) {
-
-                    }
                     results.add(file.getName());
                 }
             }
@@ -41,7 +38,6 @@ class TextExtractor {
 
     private static Kata readClass(String file, String classPath) throws IOException {
 
-        StringBuilder result = new StringBuilder();
         Kata kata = new Kata();
         System.out.println(file);
         int slashCounter = 0;
@@ -65,11 +61,9 @@ class TextExtractor {
                             slashCounter++;
                             System.out.println(line);
                         }
-
                     }
                 }
             }
-            String everything = sb.toString();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

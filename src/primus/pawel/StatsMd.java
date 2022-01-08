@@ -3,22 +3,26 @@ package primus.pawel;
 import java.util.ArrayList;
 
 public class StatsMd {
-    private static String BR_END = "<br />";
+    private static final String BR_END = "<br />";
+    private static final String MY_CW_WEBSTIE = "https://www.codewars.com/users/%3Cprim%3Erim%3C%2Fprim%3E/badges/large";
+
+    private static final String HEADER_FIRST_TEXT = "![]" + MY_CW_WEBSTIE + BR_END;
+    private static final String HEADER_SECOND_TEXT = "Exercises made in https://www.codewars.com";
 
     StringBuilder header = new StringBuilder();
     StringBuilder stats = new StringBuilder();
     StringBuilder exercises = new StringBuilder();
 
-    int[] kyulevels = new int[8];
-    int done = 0;
-    int todo = 0;
+    private int[] kyulevels = new int[8];
+    private int done = 0;
+    private int todo = 0;
 
     StatsMd() {
-        header.append("![](https://www.codewars.com/users/%3Cprim%3Erim%3C%2Fprim%3E/badges/large)").append(BR_END);
-        header.append("Exercises made in https://www.codewars.com");
+        header.append(HEADER_FIRST_TEXT);
+        header.append(HEADER_SECOND_TEXT);
     }
 
-    void addExercisesAndSetStats(ArrayList<Kata> katasLists){
+    void addExercisesAndSetStats(ArrayList<Kata> katasLists) {
         for (Kata kata : katasLists) {
             System.out.println(kata.toFile());
 
@@ -33,7 +37,7 @@ public class StatsMd {
         setStats();
     }
 
-    public void setStats(){
+    private void setStats() {
         stats.append(getKyuStats(kyulevels));
         stats.append(("<br />") + ("<br />") + ("DONE: " + done) + ("<br />"));
         stats.append("TODO: " + todo + "<br />");
@@ -49,14 +53,6 @@ public class StatsMd {
 
         System.out.println(kyuStats.toString());
         return kyuStats.toString();
-    }
-
-    public void addExercise(String exercise) {
-        exercises.append(exercise).append(BR_END);
-    }
-
-    public void addTextToStats(String text) {
-        stats.append(text);
     }
 
     String getHeader() {
