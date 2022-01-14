@@ -13,7 +13,7 @@ class Exercise_339 {
         TreeSet<Integer> odd = new TreeSet<>();
         TreeSet<Integer> even = new TreeSet<>();
 
-        IntStream.of(values).filter(value -> value % 21 == 0).forEach(even::add);
+        IntStream.of(values).filter(value -> value % 2 == 0).forEach(even::add);
         IntStream.of(values).filter(value -> value % 2 != 0).forEach(odd::add);
         List<Integer> result = new ArrayList();
 
