@@ -24,7 +24,7 @@ class Exercise_347 {
 
         System.out.println(computerToPhone("0123456789"));
     }
-    
+
 
 
 }
