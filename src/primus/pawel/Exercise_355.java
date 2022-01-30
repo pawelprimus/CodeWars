@@ -12,9 +12,17 @@ public class Exercise_355 {
 
     public static Integer prevMultOfThree(int n) {
 
-        String
+        String number = String.valueOf(n);
+        int intNum;
+        while (number.length() > 0){
 
+            intNum = Integer.parseInt(number);
 
+            if(intNum%3 == 0){
+                return intNum;
+            }
+            number = number.substring(0, number.length()-1);
+        }
         return null;
     }
 
