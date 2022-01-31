@@ -37,4 +37,10 @@ public class Exercise_355 {
 
 }
 
+/*  return IntStream.iterate(n, i -> i > 0, i -> i / 10)
+                    .filter(i -> i % 3 == 0)
+                    .boxed()
+                    .findFirst()
+                    .orElse(null);
+  }*/
 
