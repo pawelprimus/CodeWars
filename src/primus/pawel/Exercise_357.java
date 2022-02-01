@@ -28,3 +28,9 @@ class Exercise_357 {
 
 
 }
+
+/* public Double round(Double d, int p) {
+    return new BigDecimal(d).setScale(p,BigDecimal.ROUND_HALF_UP).stripTrailingZeros().doubleValue();
+  }
+
+  */
