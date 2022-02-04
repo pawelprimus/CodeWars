@@ -7,6 +7,6 @@ package primus.pawel;
 class Exercise_360_todo {
 
     public static int fourSeven(int n) {
-        return null;
+        return 0;
     }
 }
