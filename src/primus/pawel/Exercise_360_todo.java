@@ -1,5 +1,9 @@
 package primus.pawel;
 
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
 // Four/Seven
 // 7kyu
 // https://www.codewars.com/kata/5ff50f64c0afc50008861bf0/train/java
@@ -7,6 +11,20 @@ package primus.pawel;
 class Exercise_360_todo {
 
     public static int fourSeven(int n) {
-        return 0;
+
+        System.out.println(n);
+        String result = String.valueOf(n)
+                .replaceAll("7", "s")
+                .replaceAll("4", "7")
+                .replaceAll("s", "4");
+
+        return Integer.parseInt(result);
+    }
+
+    @Test
+    public void exampleTests() {
+        assertEquals(Exercise_360_todo.fourSeven(7), 4);
+        assertEquals(Exercise_360_todo.fourSeven(4), 7);
+        assertEquals(Exercise_360_todo.fourSeven(70), 0);
     }
 }
