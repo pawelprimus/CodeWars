@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 import static org.junit.Assert.assertEquals;
 
 // Sort by binary ones
-//
+// 7kyu
 // https://www.codewars.com/kata/59eb28fb0a2bffafbb0000d6/train/java
 // 2022-02-27 T:14:03:26
 public class Exercise_383 {
