@@ -4,6 +4,7 @@ package primus.pawel;
 // 7kyu
 // https://www.codewars.com/kata/5b83c1c44a6acac33400009a/train/java
 // 2022-03-04 T:01:08:45
+
 class Exercise_389 {
 
     public static long solve(String st, int k) {
