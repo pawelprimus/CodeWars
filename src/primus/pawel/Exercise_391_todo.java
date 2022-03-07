@@ -1,10 +1,10 @@
 package primus.pawel;
 
-//
-//
-//
-//
-class Exercise_391 {
+// Regexp Basics - is it a eight bit unsigned number?
+// 7kyu
+// https://www.codewars.com/kata/567e8f7b4096f2b4b1000005/train/java
+// 2022-03-05 T:23:31:45
+class Exercise_391_todo {
 
     public static boolean eightBitNumber(String n) {
         System.out.println(n);
