@@ -1,6 +1,6 @@
 
 // Find Maximum and Minimum Values of a List
-// 7kyu
+// 8kyu
 // https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 // 2022-03-03 T:00:00:32
 

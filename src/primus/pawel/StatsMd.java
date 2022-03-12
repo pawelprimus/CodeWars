@@ -22,7 +22,7 @@ public class StatsMd {
         header.append(HEADER_SECOND_TEXT);
     }
 
-    void addExercisesAndSetStats(ArrayList<Kata> katasLists) {
+    void addExercisesAndSetStats(ArrayList<Kata> katasLists, String languateType) {
         kyulevels = new int[8];
         done = 0;
         todo = 0;
@@ -38,13 +38,14 @@ public class StatsMd {
                 todo++;
             }
         }
-        setStats();
+        setStats(languateType);
     }
 
-    private void setStats() {
+    private void setStats(String languateType) {
+        stats.append("languateType");
         stats.append(getKyuStats(kyulevels));
         stats.append(("<br />") + ("<br />") + ("DONE: " + done) + ("<br />"));
-        stats.append("TODO: " + todo + "<br />");
+        stats.append("TODO: " + todo + "<br />").append(BR_END);
     }
 
     private static String getKyuStats(int[] kyulevels) {
