@@ -13,9 +13,9 @@ public class StatsMd {
     StringBuilder stats = new StringBuilder();
     StringBuilder exercises = new StringBuilder();
 
-    private int[] kyulevels = new int[8];
-    private int done = 0;
-    private int todo = 0;
+    private int[] kyulevels;
+    private int done;
+    private int todo;
 
     StatsMd() {
         header.append(HEADER_FIRST_TEXT);
@@ -23,6 +23,10 @@ public class StatsMd {
     }
 
     void addExercisesAndSetStats(ArrayList<Kata> katasLists) {
+        kyulevels = new int[8];
+        done = 0;
+        todo = 0;
+
         for (Kata kata : katasLists) {
             System.out.println(kata.toFile());
 

@@ -1,3 +1,4 @@
+
 // Is the date today
 // 8kyu
 // https://www.codewars.com/kata/563c13853b07a8f17c000022/train/javascript

@@ -1,6 +1,7 @@
-//
+
+// Filter out the geese
 // 8kyu
-//
+// https://www.codewars.com/kata/57ee4a67108d3fd9eb0000e7
 // 2022-03-07 T:23:41:53
 
 function gooseFilter(birds) {
