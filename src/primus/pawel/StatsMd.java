@@ -58,7 +58,7 @@ public class StatsMd {
                 kyuStats.append(" | ").append(i + 1).append(" | ").append(kyulevels[i]).append(" | ").append("\n");
             }
         }
-
+        kyuStats.append("\n");
         System.out.println(kyuStats.toString());
         return kyuStats.toString();
     }
