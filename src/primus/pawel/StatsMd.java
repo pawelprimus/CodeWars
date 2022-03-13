@@ -38,6 +38,7 @@ public class StatsMd {
                 todo++;
             }
         }
+        exercises.append("\\n");
         setStats(languateType);
     }
 
