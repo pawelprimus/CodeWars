@@ -38,15 +38,15 @@ public class StatsMd {
                 todo++;
             }
         }
-        exercises.append("\\n");
+        exercises.append("\\n").append(BR_END);
         setStats(languateType);
     }
 
     private void setStats(String languateType) {
         stats.append("\n").append(languateType).append("\n");
         stats.append(getKyuStats(kyulevels));
-        stats.append(("<br />") + ("<br />") + ("DONE: " + done) + ("<br />"));
-        stats.append("TODO: " + todo + "<br />").append(BR_END);
+        stats.append((BR_END) + (BR_END) + ("DONE: " + done) + (BR_END));
+        stats.append("TODO: " + todo + BR_END).append(BR_END);
     }
 
     private static String getKyuStats(int[] kyulevels) {
