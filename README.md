@@ -1,7 +1,7 @@
 ![](https://www.codewars.com/users/%3Cprim%3Erim%3C%2Fprim%3E/badges/large)<br />Exercises made in https://www.codewars.com
 
 JAVA
- - 4KYU: 5
+  | 4KYU |  5 |
  - 5KYU: 9
  - 6KYU: 107
  - 7KYU: 247
