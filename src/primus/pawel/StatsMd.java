@@ -45,8 +45,11 @@ public class StatsMd {
     private void setStats(String languateType) {
         stats.append("\n").append(languateType).append("\n");
         stats.append(getKyuStats(kyulevels));
-        stats.append((BR_END) + (BR_END) + ("DONE: " + done) + (BR_END));
-        stats.append("TODO: " + todo + BR_END).append(BR_END);
+        stats.append("| STATUS | COUNT | ").append("\n");
+        stats.append("| - | - | ").append("\n");
+        stats.append(("DONE: " + done));
+        stats.append("TODO" + todo);
+        stats.append("\n");
     }
 
     private static String getKyuStats(int[] kyulevels) {
