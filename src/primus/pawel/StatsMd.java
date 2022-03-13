@@ -47,7 +47,7 @@ public class StatsMd {
         stats.append(getKyuStats(kyulevels));
         stats.append("| STATUS | COUNT | ").append("\n");
         stats.append("| - | - | ").append("\n");
-        stats.append(("| DONE |" + done + " | "));
+        stats.append(("| DONE |" + done + " | ")).append("\n");
         stats.append("| TODO | " + todo + " | ");
         stats.append("\n");
     }
