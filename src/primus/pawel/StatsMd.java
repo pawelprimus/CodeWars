@@ -39,7 +39,7 @@ public class StatsMd {
             }
         }
         setStats(languateType);
-        exercises.append("\\n").append(BR_END);
+        exercises.append(BR_END);
     }
 
     private void setStats(String languateType) {
@@ -51,9 +51,11 @@ public class StatsMd {
 
     private static String getKyuStats(int[] kyulevels) {
         StringBuilder kyuStats = new StringBuilder();
+        kyuStats.append("| KYU LEVEL | DONE | ").append("\n");
+        kyuStats.append("| - | - | ").append("\n");
         for (int i = 0; i < kyulevels.length; i++) {
             if (kyulevels[i] > 0) {
-                kyuStats.append(" - ").append(i + 1).append("KYU: ").append(kyulevels[i]).append("\n");
+                kyuStats.append(" | ").append(i + 1).append(" | ").append(kyulevels[i]).append(" | ").append("\n");
             }
         }
 
