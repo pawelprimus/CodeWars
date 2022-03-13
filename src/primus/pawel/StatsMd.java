@@ -38,8 +38,8 @@ public class StatsMd {
                 todo++;
             }
         }
-        exercises.append("\\n").append(BR_END);
         setStats(languateType);
+        exercises.append("\\n").append(BR_END);
     }
 
     private void setStats(String languateType) {
