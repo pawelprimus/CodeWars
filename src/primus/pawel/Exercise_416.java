@@ -18,9 +18,7 @@ class Exercise_416 {
         }
         char[] chars = sbStart.toString().toCharArray();
         for (char ch : chars) {
-
             if (ch % 2 == 1) {
-
                 numbers.add("-" + ch + "-");
 
             } else {
