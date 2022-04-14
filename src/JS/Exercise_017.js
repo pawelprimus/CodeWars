@@ -1,7 +1,9 @@
+
 // Is it a palindrome?
 // 8kyu
 // https://www.codewars.com/kata/57a1fd2ce298a731b20006a4/train/javascript
 // 2022-03-14 T:22:57:57
+
 function isPalindrome(x) {
 
     const charArr = Array.from(x);
