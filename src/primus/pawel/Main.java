@@ -8,8 +8,8 @@ public class Main {
     private static String README_NAME = "README.md";
     private static String CLASS_PATH_JAVA = "src\\primus\\pawel\\";
     private static String CLASS_PATH_JS = "src\\JS\\";
-    private static String JAVA = "JAVA";
-    private static String JAVA_SCRIPT = "JAVA SCRIPT";
+    private static String JAVA = "()";
+    private static String JAVA_SCRIPT = "(https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-original.svg)";
 
 
 
