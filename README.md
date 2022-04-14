@@ -1,6 +1,6 @@
 ![](https://www.codewars.com/users/%3Cprim%3Erim%3C%2Fprim%3E/badges/large)<br />Exercises made in https://www.codewars.com
 
-()
+JAVA
 | KYU LEVEL | DONE | 
 | - | - | 
  | 4 | 5 | 
@@ -14,7 +14,7 @@
 | DONE |406 | 
 | TODO | 18 | 
 
-(https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-original.svg)
+JAVA SCRIPT
 | KYU LEVEL | DONE | 
 | - | - | 
  | 7 | 2 | 
