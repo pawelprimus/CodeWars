@@ -1,7 +1,7 @@
 //
-//
-//
-//
+// Abbreviate a Two Word Name
+// 8kyu
+// https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3
 // 2022-04-30 T:11:58:47
 
 function abbrevName(name){
