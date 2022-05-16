@@ -6,7 +6,7 @@ import java.time.LocalDate;
 // 6kyu
 // https://www.codewars.com/kata/59569ba543e2a8ebda00012a/train/java
 // 2022-05-16 T:21:09:16
-class Exercise_450_todo {
+class Exercise_450 {
 
     public static long getDaysAlive(int year, int month, int day, int year2, int month2, int day2) {
 
