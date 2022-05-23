@@ -1,0 +1,11 @@
+
+// Quarter of the year
+// 8kyu
+// https://www.codewars.com/kata/5ce9c1000bab0b001134f5af/train/javascript
+// 2022-05-22 T:23:03:43
+
+const quarterOf = (month) => {
+    return Math.ceil(month/3) ;
+}
+
+console.log(quarterOf(7))

@@ -16,16 +16,14 @@ class Exercise_457_todo {
 
         System.out.println(start);
         System.out.println(end);
-        long result = 1;
+        long result = 0;
         LocalDate firstMonday = start.with(firstInMonth(DayOfWeek.MONDAY));
         LocalDate lastFriday = end.with(lastInMonth(DayOfWeek.FRIDAY));
 
         while (firstMonday.isBefore(lastFriday)) {
 
-            if (firstMonday.getDayOfWeek() != DayOfWeek.SATURDAY && firstMonday.getDayOfWeek() != DayOfWeek.SUNDAY) {
-                result++;
-            }
-            firstMonday = firstMonday.plusDays(1);
+            result += 5;
+            firstMonday = firstMonday.plusWeeks(1);
         }
 
         return result;
