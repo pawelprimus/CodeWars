@@ -39,9 +39,10 @@ public class StatsMd {
                     todo++;
                 }
             }
-            setStats(languateType);
-            exercises.append(BR_END);
+
         }
+        setStats(languateType);
+            exercises.append(BR_END);
 
     }
 
