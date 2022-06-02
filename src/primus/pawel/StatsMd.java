@@ -28,18 +28,21 @@ public class StatsMd {
         todo = 0;
 
         for (Kata kata : katasLists) {
-            System.out.println(kata.toFile());
+            if (kata != null) {
+                System.out.println(kata.toFile());
 
-            exercises.append(kata.toFile()).append(BR_END);
-            if (kata.getStatus().equals(Kata.Status.DONE)) {
-                done++;
-                kyulevels[kata.getKyuNumber() - 1]++;
-            } else {
-                todo++;
+                exercises.append(kata.toFile()).append(BR_END);
+                if (kata.getStatus().equals(Kata.Status.DONE)) {
+                    done++;
+                    kyulevels[kata.getKyuNumber() - 1]++;
+                } else {
+                    todo++;
+                }
             }
+            setStats(languateType);
+            exercises.append(BR_END);
         }
-        setStats(languateType);
-        exercises.append(BR_END);
+
     }
 
     private void setStats(String languateType) {

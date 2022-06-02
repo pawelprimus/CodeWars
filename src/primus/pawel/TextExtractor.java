@@ -69,17 +69,20 @@ class TextExtractor {
         } finally {
             br.close();
         }
+        if(kataArr.size() != 0) {
+            kata.setNumber(file.replaceAll("[^0-9]", ""));
+            kata.setName(kataArr.get(0));
+            kata.setKyu(kataArr.get(1));
+            kata.setLink(kataArr.get(2));
+            kata.setDate(kataArr.get(3));
 
-        kata.setNumber(file.replaceAll("[^0-9]", ""));
-        kata.setName(kataArr.get(0));
-        kata.setKyu(kataArr.get(1));
-        kata.setLink(kataArr.get(2));
-        kata.setDate(kataArr.get(3));
-
-        if (file.contains("todo") || file.contains("TODO")) {
-            kata.setStatus(Kata.Status.TODO);
+            if (file.contains("todo") || file.contains("TODO")) {
+                kata.setStatus(Kata.Status.TODO);
+            } else {
+                kata.setStatus(Kata.Status.DONE);
+            }
         } else {
-            kata.setStatus(Kata.Status.DONE);
+            kata = null;
         }
 
         return kata;
