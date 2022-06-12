@@ -1,3 +1,4 @@
+
 // Sum of a sequence
 // 7 kyu
 // https://www.codewars.com/kata/586f6741c66d18c22800010a/train/javascript
