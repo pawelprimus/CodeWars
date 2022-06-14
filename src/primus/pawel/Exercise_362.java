@@ -2,8 +2,6 @@ package primus.pawel;
 
 import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 // Convert ISBN-10 to ISBN-13
 // 6kyu
 // https://www.codewars.com/kata/61ce25e92ca4fb000f689fb0/train/java
@@ -30,15 +28,6 @@ public class Exercise_362 {
         return ISBN_PREFIX + "-" + isbnWithoutLast + sufixNum;
     }
 
-
-    @Test
-    public void test() {
-        assertEquals("978-1-85326-158-9", Exercise_362.isbnConverter("1-85326-158-0"));
-        assertEquals("978-0-14-143951-8", Exercise_362.isbnConverter("0-14-143951-3"));
-        assertEquals("978-0-02-346450-8", Exercise_362.isbnConverter("0-02-346450-X"));
-        assertEquals("978-963-14-2164-4", Exercise_362.isbnConverter("963-14-2164-3"));
-        assertEquals("978-1-7982-0894-6", Exercise_362.isbnConverter("1-7982-0894-6"));
-    }
 
 
 }

@@ -1,6 +1,5 @@
 package primus.pawel;
 
-import org.junit.platform.commons.util.StringUtils;
 
 import java.util.Collections;
 

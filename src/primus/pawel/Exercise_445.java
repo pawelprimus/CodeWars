@@ -1,6 +1,5 @@
 package primus.pawel;
 
-import org.junit.platform.commons.util.StringUtils;
 
 // C.Wars
 // 7kyu

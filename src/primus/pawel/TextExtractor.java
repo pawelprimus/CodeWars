@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 class TextExtractor {
 
@@ -23,7 +24,6 @@ class TextExtractor {
 
     private static ArrayList<String> getAllFileNames(String path) {
         ArrayList<String> results = new ArrayList<String>();
-
         File[] files = new File(path).listFiles();
         for (File file : files) {
             if (file.isFile()) {
