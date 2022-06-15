@@ -19,10 +19,9 @@ class TextExtractor {
         }
 
         return allKatas;
-
     }
 
-    private static ArrayList<String> getAllFileNames(String path) {
+    private static ArrayList<String> getAllFileNames(String path) throws IOException {
         ArrayList<String> results = new ArrayList<String>();
         File[] files = new File(path).listFiles();
         for (File file : files) {
@@ -45,36 +44,37 @@ class TextExtractor {
 
         BufferedReader br = new BufferedReader(new FileReader(classPath + "\\" + file));
         try {
-            StringBuilder sb = new StringBuilder();
+            //StringBuilder sb = new StringBuilder();
             String line = br.readLine();
 
             while (line != null) {
-                sb.append(line);
-                sb.append(System.lineSeparator());
-                line = br.readLine();
+                //sb.append(line);
+                //sb.append(System.lineSeparator());
 
-                if (line != null) {
-                    if (slashCounter < 4) {
-
-                        if (line.contains("//")) {
+                    if (line.contains("//")) {
+                        if (slashCounter < 4) {
                             kataArr.add(line.replace("//", "").trim());
                             slashCounter++;
                             System.out.println(line);
                         }
                     }
-                }
+                line = br.readLine();
             }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             br.close();
         }
-        if(kataArr.size() != 0) {
+
+        if (kataArr.size() != 0) {
+            kataArr.forEach(System.out::println);
+
             kata.setNumber(file.replaceAll("[^0-9]", ""));
             kata.setName(kataArr.get(0));
             kata.setKyu(kataArr.get(1));
             kata.setLink(kataArr.get(2));
             kata.setDate(kataArr.get(3));
+
 
             if (file.contains("todo") || file.contains("TODO")) {
                 kata.setStatus(Kata.Status.TODO);

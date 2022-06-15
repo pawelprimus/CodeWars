@@ -1,5 +1,4 @@
 package primus.pawel;
-
 // Reversing a process
 // 6kyu
 // https://www.codewars.com/kata/5dad6e5264e25a001918a1fc/train/java
