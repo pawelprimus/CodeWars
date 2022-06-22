@@ -4,5 +4,5 @@
 // 2022-06-20 T:20:49:16
 
 function filterLongWords(sentence, n) {
-    //Solution here
+    return sentence.split(' ').filter(word => word.length > n)
 }

@@ -4,5 +4,18 @@
 // 2022-06-20 T:20:49:56
 
 function evenLast(numbers) {
-    // Good luck
+    if(numbers.length === 0){
+        return 0;
+    }
+    var lastNumber = numbers[numbers.length -1];
+    var result = numbers[0] * lastNumber;
+
+    for (let i = 1; i < numbers.length; i++) {
+        if(i%2 === 0){
+            result += numbers[i]*lastNumber
+        }
+    }
+    return result;
 }
+
+evenLast([1, 3, 3, 1, 10])
