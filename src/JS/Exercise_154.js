@@ -9,9 +9,6 @@ function swap(str) {
     var chars = str.split("");
 
     for (const char of chars) {
-
-        console.log(char);
-
         if (isLowerCase(char)) {
             result += char.toUpperCase()
         } else {
