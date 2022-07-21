@@ -6,9 +6,9 @@ import java.util.ArrayList;
 
 public class Main {
 
-    private static String README_NAME = "CodeWars\\README.md";
-    private static String CLASS_PATH_JAVA = "CodeWars\\src\\primus\\pawel\\";
-    private static String CLASS_PATH_JS = "CodeWars\\src\\JS\\";
+    private static String README_NAME = "README.md";
+    private static String CLASS_PATH_JAVA = "src\\primus\\pawel\\";
+    private static String CLASS_PATH_JS = "src\\JS\\";
     private static String JAVA = "JAVA";
     private static String JAVA_SCRIPT = "JAVA SCRIPT";
 
