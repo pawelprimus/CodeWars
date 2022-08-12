@@ -1,19 +1,16 @@
-// ASCII letters from Number
+// Unique Sum
 // 7kyu
-// https://www.codewars.com/kata/589ebcb9926baae92e000001/train/javascript
-// 2022-08-10 T:08:06:20
+// https://www.codewars.com/kata/56b1eb19247c01493a000065/train/javascript
+// 2022-08-12 T:21:52:20
 
-function convert(number) {
-    var toAsci = '';
-    var result = '';
-    for (let i = 0; i < number.length; i++) {
-        toAsci += number.charAt(i);
-        if (i % 2 === 1) {
-            result += String.fromCharCode(toAsci);
-            toAsci = '';
-        }
+function uniqueSum(lst) {
+
+    if (lst == null || lst.length === 0) {
+        return null;
     }
-    return result;
+
+    uniq = [...new Set(lst)];
+    return uniq.reduce((num, sum) => sum + num, 0);
 }
 
-console.log(convert('73327673756932858080698267658369'))
+console.log(uniqueSum([]))
