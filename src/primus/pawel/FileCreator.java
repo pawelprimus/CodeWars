@@ -1,11 +1,11 @@
-package primus.pawel;
+package src.primus.pawel;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
-class FileCreator {
+public class FileCreator {
 
-    static void generateFileMD(StatsMd statsMd, String fileName){
+    public static void generateFileMD(StatsMd statsMd, String fileName){
         try (PrintWriter out = new PrintWriter(fileName)) {
             out.println(statsMd.getHeader());
             out.println(statsMd.getStats());

@@ -1,4 +1,4 @@
-package primus.pawel;
+package src.primus.pawel;
 
 public class Kata {
 

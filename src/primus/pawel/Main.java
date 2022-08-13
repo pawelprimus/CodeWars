@@ -1,5 +1,10 @@
 package primus.pawel;
 
+import src.primus.pawel.FileCreator;
+import src.primus.pawel.Kata;
+import src.primus.pawel.StatsMd;
+import src.primus.pawel.TextExtractor;
+
 import java.io.IOException;
 import java.util.ArrayList;
 

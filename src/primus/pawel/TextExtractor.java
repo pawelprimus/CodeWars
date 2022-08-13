@@ -1,4 +1,4 @@
-package primus.pawel;
+package src.primus.pawel;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -6,10 +6,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-class TextExtractor {
+public class TextExtractor {
 
 
-    static ArrayList<Kata> getKatas(String classPath) throws IOException {
+    public static ArrayList<Kata> getKatas(String classPath) throws IOException {
         ArrayList<String> allFileNames = getAllFileNames(classPath);
         ArrayList<Kata> allKatas = new ArrayList<>();
 

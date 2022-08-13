@@ -1,4 +1,4 @@
-package primus.pawel;
+package src.primus.pawel;
 
 import java.util.ArrayList;
 
@@ -17,12 +17,12 @@ public class StatsMd {
     private int done;
     private int todo;
 
-    StatsMd() {
+    public StatsMd() {
         header.append(HEADER_FIRST_TEXT);
         header.append(HEADER_SECOND_TEXT);
     }
 
-    void addExercisesAndSetStats(ArrayList<Kata> katasLists, String languateType) {
+    public void addExercisesAndSetStats(ArrayList<Kata> katasLists, String languateType) {
         kyulevels = new int[8];
         done = 0;
         todo = 0;
