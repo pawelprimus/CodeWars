@@ -1,6 +1,9 @@
 package primus.pawel;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 
 // Sort an array by value and index
 // 7kyu

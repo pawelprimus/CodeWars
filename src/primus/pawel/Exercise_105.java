@@ -1,7 +1,5 @@
 package primus.pawel;
 
-import java.util.Arrays;
-
 // Message validator
 // 6kyu
 // https://www.codewars.com/kata/5fc7d2d2682ff3000e1a3fbc/train/java

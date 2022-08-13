@@ -1,7 +1,5 @@
 package primus.pawel;
 
-import java.util.Arrays;
-
 //Bumps in the road
 // 7kyu
 // https://www.codewars.com/kata/57ed30dde7728215300005fa/train/java

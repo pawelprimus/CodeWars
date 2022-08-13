@@ -1,8 +1,5 @@
 package primus.pawel;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 // Valid Phone Number
 // 6kyu
 // https://www.codewars.com/kata/525f47c79f2f25a4db000025/train/java

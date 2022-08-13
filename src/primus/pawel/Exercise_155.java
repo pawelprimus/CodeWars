@@ -1,15 +1,5 @@
 package primus.pawel;
 
-import java.math.BigInteger;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-
-
-
-import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-
 // Crack the pin
 // 6kyu
 // https://www.codewars.com/kata/5efae11e2d12df00331f91a6/train/java

@@ -1,10 +1,5 @@
 package primus.pawel;
 
-import org.junit.Test;
-
-import static junit.framework.TestCase.assertEquals;
-
-
 // Previous multiple of three
 // 7kyu
 // https://www.codewars.com/kata/61123a6f2446320021db987d/train/java

@@ -1,8 +1,5 @@
 package primus.pawel;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 //Password Maker
 // 6kyu
 // https://www.codewars.com/kata/5b3d5ad43da310743c000056

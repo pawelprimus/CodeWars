@@ -1,8 +1,5 @@
 package primus.pawel;
 
-import java.util.stream.IntStream;
-import java.util.stream.LongStream;
-
 // Sequences and Series
 // 6kyu
 // https://www.codewars.com/kata/5254bd1357d59fbbe90001ec/train/java

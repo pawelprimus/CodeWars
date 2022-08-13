@@ -1,6 +1,5 @@
 package primus.pawel;
 
-import java.util.Arrays;
 import java.util.Collections;
 
 // Data compression using run-length encoding

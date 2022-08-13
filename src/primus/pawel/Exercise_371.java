@@ -1,8 +1,5 @@
 package primus.pawel;
 
-import org.junit.Test;
-
-
 // Double Every Other
 // 7kyu
 // https://www.codewars.com/kata/5809c661f15835266900010a/train/java

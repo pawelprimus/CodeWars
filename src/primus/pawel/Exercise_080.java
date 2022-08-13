@@ -2,7 +2,6 @@ package primus.pawel;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 // Interactive Dictionary
 // 7kyu

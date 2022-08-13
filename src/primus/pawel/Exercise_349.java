@@ -1,12 +1,8 @@
 package primus.pawel;
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
-import org.junit.runners.JUnit4;
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 // Dead Ants
 // 6kyu

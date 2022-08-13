@@ -1,7 +1,5 @@
 package primus.pawel;
 
-import org.junit.Test;
-
 // Convert ISBN-10 to ISBN-13
 // 6kyu
 // https://www.codewars.com/kata/61ce25e92ca4fb000f689fb0/train/java

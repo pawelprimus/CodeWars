@@ -2,7 +2,6 @@ package primus.pawel;
 
 import java.util.Comparator;
 import java.util.LinkedList;
-import java.util.stream.Stream;
 
 // Meeting
 // 6kyu

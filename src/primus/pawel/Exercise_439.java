@@ -1,7 +1,6 @@
 package primus.pawel;
 
 import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
 // ToLeetSpeak
 // 7kyu

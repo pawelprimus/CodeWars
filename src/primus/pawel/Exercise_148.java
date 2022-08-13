@@ -1,7 +1,5 @@
 package primus.pawel;
 
-import java.util.ArrayList;
-
 // Broken sequence
 // 7kyu
 // https://www.codewars.com/kata/5512e5662b34d88e44000060/train/java

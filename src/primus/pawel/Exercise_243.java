@@ -1,7 +1,5 @@
 package primus.pawel;
 
-import java.util.HashMap;
-
 // Find the stray number
 // 7kyu
 // https://www.codewars.com/kata/57f609022f4d534f05000024/train/java

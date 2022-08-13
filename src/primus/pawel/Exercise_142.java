@@ -1,10 +1,5 @@
 package primus.pawel;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.math.RoundingMode;
-import java.util.LinkedList;
-
 // Going to zero or to infinity?
 // 5kyu
 // https://www.codewars.com/kata/55a29405bc7d2efaff00007c/train/java

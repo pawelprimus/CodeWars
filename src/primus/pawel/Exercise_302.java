@@ -1,8 +1,5 @@
 package primus.pawel;
 
-import java.util.Arrays;
-import java.util.stream.Collectors;
-
 // Ordering the words!
 // 7kyu
 // https://www.codewars.com/kata/55d7e5aa7b619a86ed000070/train/java

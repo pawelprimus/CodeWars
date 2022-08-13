@@ -1,7 +1,5 @@
 package primus.pawel;
 
-import java.util.stream.Stream;
-
 // The Office III - Broken Photocopier
 // 7kyu
 // https://www.codewars.com/kata/57ed56657b45ef922300002b/train/java

@@ -1,9 +1,5 @@
 package primus.pawel;
 
-import java.nio.channels.OverlappingFileLockException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 // Find the nth occurrence of a word in a string!
 // 7kyu
 // https://www.codewars.com/kata/5b1d1812b6989d61bd00004f/train/java
