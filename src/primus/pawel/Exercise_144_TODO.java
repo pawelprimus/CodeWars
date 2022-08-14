@@ -1,4 +1,4 @@
-package primus.pawel;
+package src.primus.pawel;
 // Battleship field validator
 // 3kyu
 // https://www.codewars.com/kata/52bb6539a4cf1b12d90005b7
