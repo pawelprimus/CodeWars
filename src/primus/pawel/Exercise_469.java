@@ -10,15 +10,14 @@ import java.util.stream.Collectors;
 // 2022-08-23 T:17:14:04
 public class Exercise_469 {
 
-  public static String[] lineupStudents(String students)
-  {
+  public static String[] lineupStudents(String students) {
     return Arrays.asList(students.split(" ")).stream()
         .sorted(Exercise_469::compare)
         .toArray(String[]::new);
   }
 
   public static int compare(String o1, String o2) {
-    if(o1.length() == o2.length()){
+    if (o1.length() == o2.length()) {
       return o2.compareTo(o1);
     }
     return o1.length() > o2.length() ? -1 : 1;
