@@ -12,7 +12,6 @@ public class Exercise_469 {
 
   public static String[] lineupStudents(String students)
   {
-
     return Arrays.asList(students.split(" ")).stream()
         .sorted(Exercise_469::compare)
         .toArray(String[]::new);
