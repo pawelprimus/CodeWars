@@ -5,7 +5,7 @@ package src.primus.pawel;
 // https://www.codewars.com/kata/636173d79cf0de003d6834e4/train/java
 // 2023-01-21 T:13:05:22
 
-public class Exercise_495_todo {
+public class Exercise_495 {
 
     private static final String STEP = "step ";
     private static final String STEPS = "steps ";

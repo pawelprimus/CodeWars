@@ -5,7 +5,7 @@ package src.primus.pawel;
 // https://www.codewars.com/kata/579ba41ce298a73aaa000255/train/java
 // 2023-01-21 T:12:46:40
 
-public class Exercise_494_todo {
+public class Exercise_494 {
 
     public static void main(String[] args) {
         nameThatNumber(20);
