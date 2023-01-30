@@ -1,16 +1,13 @@
 package src.primus.pawel;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 // The First Non Repeated Character In A String
 // 7kyu
 // https://www.codewars.com/kata/570f6436b29c708a32000826/train/java
 // 2023-01-29 T:22:58:25
-public class Exercise_501_todo {
+public class Exercise_501 {
 
     public static Character firstNonRepeated(String source) {
 
