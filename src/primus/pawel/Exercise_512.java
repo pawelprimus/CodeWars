@@ -1,8 +1,6 @@
 package src.primus.pawel;
 
-import java.time.DayOfWeek;
 import java.util.*;
-import java.util.stream.Collectors;
 
 // Sum a list but ignore any duplicates
 // 7kyu
